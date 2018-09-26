@@ -106,8 +106,8 @@ class LinkedList:
       while node.next is not None:
         if node.next.value == val1:
           prev =  Node(val2)
-          prev.next = node.next
-          node.next = prev
+          prev.next = node.next.next
+          node.next.next = prev
           break
         node = node.next
 
