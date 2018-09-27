@@ -23,7 +23,13 @@ class LinkedList:
         while node != None:
             print(node.value)
             node = node.next
-
+    def return_all_nodes(self):
+        node = self.head
+        arrNodes = []
+        while node is not None:
+            arrNodes.append(node.value)
+            node = node.next
+        return arrNodes
     # Найти значение в связанном списке
     def find(self, val):
         node = self.head
@@ -108,14 +114,32 @@ class LinkedList:
                     break
                 node = node.next
 
+def Comparison(link1, link2):
+    arrNodes = []
+    length1 = link1.lengthList()
+    length2 = link2.lengthList()
+    def sumNode(nodeX):
+        sumX = 0
+        s = nodeX.return_all_nodes()
+        for i in s:
+            sumX += i
+        return sumX
+    if length1 == length2:
+        for node in [link1, link2]:
+            arrNodes.append(sumNode(node))
+    return arrNodes
 
-s_list = LinkedList()
-s_list.add_in_tail(Node(35))
-s_list.add_in_tail(Node(54))
-s_list.add_in_tail(Node(2))
-s_list.add_in_tail(Node(24))
-s_list.add_in_tail(Node(48))
+s_list1 = LinkedList()
+s_list2 = LinkedList()
+s_list1.add_in_tail(Node(23))
+s_list1.add_in_tail(Node(62))
+s_list1.add_in_tail(Node(2))
+s_list1.add_in_tail(Node(83))
+s_list2.add_in_tail(Node(3))
+s_list2.add_in_tail(Node(42))
+s_list2.add_in_tail(Node(35))
+s_list2.add_in_tail(Node(8))
 
-s_list.add_val_after(24,45)
-
-s_list.print_all_nodes()
+lists = Comparison(s_list1, s_list2)
+for u in range(len(lists)):
+    print('В', u+1,'сумма =',lists[u])
