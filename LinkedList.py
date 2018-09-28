@@ -114,20 +114,23 @@ class LinkedList:
                     break
                 node = node.next
 
+
+
 def Comparison(link1, link2):
-    arrNodes = []
     length1 = link1.lengthList()
     length2 = link2.lengthList()
-    def sumNode(nodeX):
-        sumX = 0
-        s = nodeX.return_all_nodes()
-        for i in s:
-            sumX += i
-        return sumX
+    list_sum = LinkedList()
+    list_link1 = link1.head
+    list_link2 = link2.head
+
     if length1 == length2:
-        for node in [link1, link2]:
-            arrNodes.append(sumNode(node))
-    return arrNodes
+        while list_link1 != None and list_link2 != None:
+            res = list_link1.value + list_link2.value
+            list_sum.add_in_tail(Node(res))
+            list_link1 = list_link1.next
+            list_link2 = list_link2.next
+    return list_sum.return_all_nodes()
+
 
 s_list1 = LinkedList()
 s_list2 = LinkedList()
@@ -140,6 +143,5 @@ s_list2.add_in_tail(Node(42))
 s_list2.add_in_tail(Node(35))
 s_list2.add_in_tail(Node(8))
 
-lists = Comparison(s_list1, s_list2)
-for u in range(len(lists)):
-    print('В', u+1,'сумма =',lists[u])
+listsSum = Comparison(s_list1, s_list2)
+print(listsSum)
