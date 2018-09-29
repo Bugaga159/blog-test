@@ -23,6 +23,7 @@ class LinkedList:
         while node != None:
             print(node.value)
             node = node.next
+
     def return_all_nodes(self):
         node = self.head
         arrNodes = []
@@ -30,6 +31,7 @@ class LinkedList:
             arrNodes.append(node.value)
             node = node.next
         return arrNodes
+
     # Найти значение в связанном списке
     def find(self, val):
         node = self.head
@@ -57,17 +59,17 @@ class LinkedList:
 
     # Удалить заданное значение в связанном списке все
     def removeAllVal(self, val):
+        if self.head.value == val:
+            self.head = self.head.next
         if self.head == None:
             return None
-        elif self.head.value == val:
-            self.head = self.head.next
         else:
             node = self.head
             while node.next is not None:
                 if node.next.value == val:
                     if self.tail == node.next:
                         self.tail == node.next.next
-                    node.next = prev = node.next.next
+                    node.next = node.next.next
                 else:
                     node = node.next
 
@@ -83,7 +85,7 @@ class LinkedList:
         else:
             res = []
             node = self.head
-            num = 1
+            num = 0
             while node is not None:
                 num += 1
                 if node.value == val:
@@ -115,6 +117,12 @@ class LinkedList:
                 node = node.next
 
 
+"""
+Функция Comparison(),функцию, которая получает на вход два связанных списка,
+ состоящие из целых значений, и если их длины равны, возвращает список,
+ каждый элемент которого равен сумме соответствующих элементов входных списков.
+"""
+
 
 def Comparison(link1, link2):
     length1 = link1.lengthList()
@@ -135,13 +143,13 @@ def Comparison(link1, link2):
 s_list1 = LinkedList()
 s_list2 = LinkedList()
 s_list1.add_in_tail(Node(23))
-s_list1.add_in_tail(Node(62))
+s_list1.add_in_tail(Node(23))
 s_list1.add_in_tail(Node(2))
 s_list1.add_in_tail(Node(83))
+s_list1.add_in_tail(Node(62))
 s_list2.add_in_tail(Node(3))
 s_list2.add_in_tail(Node(42))
 s_list2.add_in_tail(Node(35))
 s_list2.add_in_tail(Node(8))
 
-listsSum = Comparison(s_list1, s_list2)
-print(listsSum)
+
