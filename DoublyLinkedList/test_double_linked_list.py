@@ -24,13 +24,25 @@ class TestDoubleLinkedList(unittest.TestCase):
                                 [1, 2, 3],
                                 [2, 3, 5],
                                 [3, 5, 'None']])
-        test_rem.remove(5)
-        test_rem.remove(3)
+
         test_rem.remove(1)
+        self.assertEqual(test_rem.head.value, 2)
+        self.assertEqual(test_rem.head.next.value, 3)
+
+        test_rem.remove(5)
+        self.assertEqual(test_rem.tail.value, 3)
+        self.assertIsNone(test_rem.tail.next)
+        self.assertIsNotNone(test_rem.tail.prev)
+        self.assertEqual(test_rem.tail.prev.value, 2)
+        self.assertIsNone(test_rem.head.prev)
+
+        test_rem.remove(3)
         res2 = test_rem.return_Lists()
 
         # Проверка на соответствие, при удаление всех узлов, кроме
         self.assertEqual(res2, [['None', 2, 'None']])
+
+
 
     # тест проверки метода вставки узла после заданного узла.
     def test_add_val_after(self):
@@ -46,6 +58,10 @@ class TestDoubleLinkedList(unittest.TestCase):
                                 [42, 8, 9],
                                 [8, 9, 'None']])
 
+        self.assertEqual(test_add.head.prev, None)
+        self.assertIsNone(test_add.head.prev)
+        self.assertEqual(test_add.head.next.value, 42)
+
         test_add.add_val_after(42, 16)
         res2 = test_add.return_Lists()
         self.assertEqual(res2, [['None', 7, 42],
@@ -53,6 +69,12 @@ class TestDoubleLinkedList(unittest.TestCase):
                                 [42, 16, 8],
                                 [16, 8, 9],
                                 [8, 9, 'None']])
+
+        test_add.add_val_after(9, 64)
+        self.assertEqual(test_add.tail.value, 64)
+        self.assertEqual(test_add.tail.prev.value, 9)
+        self.assertIsNone(test_add.tail.next)
+
 
     # тест проверки метода вставки узла самым первым элементом
     def test_add_first(self):

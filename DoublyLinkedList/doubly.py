@@ -64,6 +64,11 @@ class LinkedList2:
         node = self.head
         if self.head == None:
             return None
+        elif self.tail.value == val1:
+            new_node = Node2(val2)
+            self.tail.next = new_node
+            new_node.prev = self.tail
+            self.tail = new_node
         else:
             while node is not None:
                 if node.value == val1:
@@ -105,12 +110,6 @@ class LinkedList2:
             print('*' * 9)
             node = node.next
 
-test = LinkedList2()
-test.add_in_tail(Node2(35))
-test.add_in_tail(Node2(3))
-test.add_in_tail(Node2(5))
-test.remove(5)
 
-print(test.tail.value)
-test.show()
+
 
