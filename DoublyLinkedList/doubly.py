@@ -19,6 +19,25 @@ class LinkedList2:
             item.prev = self.tail
         self.tail = item
 
+    def return_Lists(self):
+        arrList = []
+        node = self.head
+        while node is not None:
+            if node.prev == None:
+                prevRet = 'None'
+            else:
+                prevRet= node.prev.value
+            valRet = node.value
+            if node.next == None:
+                nextRet = 'None'
+            else:
+                nextRet = node.next.value
+
+            arrList.append([prevRet, valRet, nextRet])
+            node = node.next
+        return arrList
+
+
     # метод удаления одного узла по его значению
     def remove(self, val):
         if self.head == None:
@@ -45,10 +64,11 @@ class LinkedList2:
         else:
             while node is not None:
                 if node.value == val1:
-                    prev = Node2(val2)
-                    prev.next = node.next
-                    node.next = prev
-                    node.next.prev = node
+                    new_node = Node2(val2)
+                    new_node.next = node.next
+                    node.next.prev = new_node
+                    new_node.prev = node
+                    node.next = new_node
                     break
                 node = node.next
 
@@ -66,7 +86,7 @@ class LinkedList2:
                 self.head.prev = new_node
             self.head = new_node
 
-# Показать связанный список
+    # Показать связанный список
     def show(self):
         node = self.head
         while node != None:
@@ -82,14 +102,4 @@ class LinkedList2:
             print('*' * 9)
             node = node.next
 
-
-list2 = LinkedList2()
-list2.add_in_tail(Node2(12))
-list2.add_in_tail(Node2(14))
-list2.add_in_tail(Node2(36))
-list2.add_in_tail(Node2(48))
-list2.remove(36)
-list2.add_val_after(14,22)
-list2.add_first(64)
-list2.show()
 
