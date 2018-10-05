@@ -45,6 +45,9 @@ class LinkedList2:
         elif self.head.value == val:
             self.head = self.head.next
             self.head.prev = None
+        elif self.tail.value == val:
+            self.tail = self.tail.prev
+            self.tail.next = None
         else:
             node = self.head
             while node is not None:
@@ -102,4 +105,12 @@ class LinkedList2:
             print('*' * 9)
             node = node.next
 
+test = LinkedList2()
+test.add_in_tail(Node2(35))
+test.add_in_tail(Node2(3))
+test.add_in_tail(Node2(5))
+test.remove(5)
+
+print(test.tail.value)
+test.show()
 
