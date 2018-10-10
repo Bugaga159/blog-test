@@ -45,13 +45,4 @@ class DynArray:
         self.count +=1
         self.array = new_array
 
-da = DynArray()
-da.append(23)
-da.append(35)
-da.append(77)
-da.append(6)
-da.append(48)
-da.insert(1, 57)
-for i in range(len(da)):
-    print(da[i])
 
