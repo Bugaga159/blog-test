@@ -97,7 +97,7 @@ class LinkedList2:
     # Показать связанный список
     def show(self):
         node = self.head
-        while node != None:
+        while node is not None:
             if node.prev == None:
                 print('None')
             else:

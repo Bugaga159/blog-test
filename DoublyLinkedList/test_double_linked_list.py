@@ -96,3 +96,7 @@ class TestDoubleLinkedList(unittest.TestCase):
                                 [52, 2, 12],
                                 [2, 12, 74],
                                 [12, 74, 'None']])
+
+
+if __name__ == "__main__":
+    unittest.main()
