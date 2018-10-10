@@ -31,7 +31,19 @@ class DynArray:
         self.count += 1
 
     def insert(self, i, itm):
-        
+        new_array = []
+        if self.count == self.capacity:
+            self.resize(2 * self.capacity)
+        for u in range(self.count):
+            if u == i:
+                new_array.append(itm)
+                new_array.append(self.array[u])
+            elif u > i:
+                new_array.append(self.array[u])
+            else:
+                new_array.append(self.array[u])
+        self.count +=1
+        self.array = new_array
 
 da = DynArray()
 da.append(23)
