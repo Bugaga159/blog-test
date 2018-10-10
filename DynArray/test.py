@@ -1,6 +1,7 @@
 import unittest
 import DynArray as arr
 
+
 class test_DynArray(unittest.TestCase):
 
     '''
@@ -10,12 +11,43 @@ class test_DynArray(unittest.TestCase):
     что новая длина массива может превысить размер буфера.
     '''
     def test_insert(self):
-        da = arr.DynArray()
-        for i in range(16):
-            da.append(i)
-        da.insert(3, 88)
-        self.assertEqual(da[3], 88)
-        self.assertEqual(da[4], 3)
-        self.assertEqual(len(da), 17)
-        self.assertEqual(da.capacity, 32)
+        test1 = arr.DynArray()
+        test1.append(25)
+        test1.append(78)
+        test1.append(2)
+        test1.append(33)
+        test1.append(245)
+        test1.append(8)
+        test1.insert(3, 88)
+
+        self.assertEqual(test1[3], 88)  # проверка на key=3 => value=8
+        self.assertEqual(test1[4], 33)  # проверка на key=4 => value=33
+        self.assertEqual(len(test1), 7) # проверка длины массива
+        self.assertEqual(test1.capacity, 16) # проверка на ёмкость буфера
+        test1.append(52)
+        for u in range(10):
+            test1.append(u)
+        self.assertEqual(len(test1), 18)    # проверка длины массива
+        self.assertEqual(test1.capacity, 32)    # проверка на ёмкость буфера, должен увеличиться в 2х раза
+        self.assertEqual(test1[17], 9)  # проверка на key=17 => value=9
+
+    def test_delete(self):
+        test2 = arr.DynArray()
+        test2.append(45)
+        test2.append(12)
+        test2.append(72)
+        test2.append(5)
+        test2.append(20)
+        test2.append(98)
+        test2.delete(3)
+        self.assertEqual(test2[3], 20)
+        self.assertEqual(len(test2), 5)
+        test2.append(89)
+        self.assertEqual(test2[5], 89)
+        self.assertEqual(test2.capacity, 16)
+        for i in range(11):
+            test2.append(i)
+        self.assertEqual(len(test2), 17)
+        self.assertEqual(test2.capacity, 32)
+
 
