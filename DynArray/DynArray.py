@@ -32,14 +32,19 @@ class DynArray:
 
     def insert(self, i, itm):
         new_array = []
-        for u in range(self.count):
-            if u == i:
-                new_array.append(itm)
-                new_array.append(self.array[u])
-            elif u > i:
-                new_array.append(self.array[u])
-            else:
-                new_array.append(self.array[u])
+        if self.array[i] is None:
+            return None
+        else:
+            for u in range(self.count):
+                if u == i:
+                    new_array.append(itm)
+                    new_array.append(self.array[u])
+                elif u > i:
+                    new_array.append(self.array[u])
+                else:
+                    new_array.append(self.array[u])
+
+
         self.count += 1
         if self.count == self.capacity:
             self.resize(2 * self.capacity)
@@ -49,11 +54,14 @@ class DynArray:
 
     def delete(self, i):
         new_array = []
-        for u in range(self.count):
-            if u == i:
-                continue
-            else:
-                new_array.append(self.array[u])
+        if i >= self.count:
+            return None
+        else:
+            for u in range(self.count):
+                if u == i:
+                    continue
+                else:
+                    new_array.append(self.array[u])
         self.count -= 1
         for u in range(self.count):
             self.array[u] = new_array[u]

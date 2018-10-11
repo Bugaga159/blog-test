@@ -27,9 +27,10 @@ class test_DynArray(unittest.TestCase):
         test1.append(52)
         for u in range(10):
             test1.append(u)
-        self.assertEqual(len(test1), 18)    # проверка длины массива
+        self.assertEqual(len(test1), 18)    # проверка длины массива и должен был увеличиться буфер
         self.assertEqual(test1.capacity, 32)    # проверка на ёмкость буфера, должен увеличиться в 2х раза
         self.assertEqual(test1[17], 9)  # проверка на key=17 => value=9
+        self.assertIsNone(test1.insert(55, 25)) #   Проверка на отсутствие в массиве key = 55
 
     def test_delete(self):
         test2 = arr.DynArray()
@@ -56,8 +57,9 @@ class test_DynArray(unittest.TestCase):
             len(test2) == test2.capacity
             то буфер должен увеличиться в 2х раза
         '''
-        self.assertNotEqual(test2.capacity, 16)
+        self.assertNotEqual(test2.capacity, 16)  # => True
         test2.delete(58)
+        self.assertEqual(len(test2), 16)  # проверка длины массива
 
         '''
             проверка на ёмкость буфера, 
@@ -65,7 +67,14 @@ class test_DynArray(unittest.TestCase):
             (test2.capacity / 2) > test2.count and test2.capacity > 16
         
         '''
-        self.assertEqual(test2.capacity, 16)
+        self.assertEqual(test2.capacity, 32) # => True
+
+        '''
+            Проверка на удаление элемента в недопустимой позиции 99 
+        '''
+
+        self.assertEqual(test2.delete(99), None) # test2.delete(99) => None, => True
+
 
 if __name__ == '__main__':
     unittest.main()
