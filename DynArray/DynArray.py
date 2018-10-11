@@ -55,13 +55,14 @@ class DynArray:
             else:
                 new_array.append(self.array[u])
         self.count -= 1
-        if self.count == self.capacity:
-            self.resize(2 * self.capacity)
         for u in range(self.count):
             self.array[u] = new_array[u]
 
         if (self.capacity / 2) > self.count and self.capacity > 16:
-            self.capacity = int(self.capacity / 2)
+            if self.count == self.capacity:
+                self.resize(2 * self.capacity)
+            else:
+                self.capacity = int(self.capacity / 2)
 
 
 

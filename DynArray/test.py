@@ -40,14 +40,32 @@ class test_DynArray(unittest.TestCase):
         test2.append(20)
         test2.append(98)
         test2.delete(3)
-        self.assertEqual(test2[3], 20)
-        self.assertEqual(len(test2), 5)
+        self.assertEqual(test2[3], 20)  # проверка на key=3 => value=20
+        self.assertEqual(len(test2), 5) # проверка длины массива
         test2.append(89)
-        self.assertEqual(test2[5], 89)
-        self.assertEqual(test2.capacity, 16)
+        self.assertEqual(test2[5], 89)  # проверка на key=5 => value=89
+        self.assertEqual(test2.capacity, 16)    # проверка на ёмкость буфера
         for i in range(11):
             test2.append(i)
-        self.assertEqual(len(test2), 17)
-        self.assertEqual(test2.capacity, 32)
+        self.assertEqual(len(test2), 17)    # проверка длины массива
+        self.assertEqual(test2.capacity, 32)    # проверка на ёмкость буфера
+        test2.delete(2)
 
+        '''
+            проверка на ёмкость буфера, если длина массива
+            len(test2) == test2.capacity
+            то буфер должен увеличиться в 2х раза
+        '''
+        self.assertNotEqual(test2.capacity, 16)
+        test2.delete(58)
 
+        '''
+            проверка на ёмкость буфера, 
+            должен уменьшиться в 2х раза, при условии:
+            (test2.capacity / 2) > test2.count and test2.capacity > 16
+        
+        '''
+        self.assertEqual(test2.capacity, 16)
+
+if __name__ == '__main__':
+    unittest.main()
