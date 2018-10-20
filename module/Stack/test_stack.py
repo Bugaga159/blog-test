@@ -65,3 +65,17 @@ class TestStack(unittest.TestCase):
         self.assertFalse(test2)
         self.assertTrue(test3)
         self.assertFalse(test4)
+
+    def test_expression_solution(self):
+        test1 = []
+        test2 = [ 1, '-',1]
+        test3 = [1, '+', 1]
+        test4 = [1, 1]
+        test5 = [1, 1, '+', 1, '+', 5, '*']
+
+        self.assertFalse(Stack.expression_solution(test1))
+        self.assertFalse(Stack.expression_solution(test2))
+        self.assertFalse(Stack.expression_solution(test3))
+        self.assertFalse(Stack.expression_solution(test4))
+        self.assertTrue(Stack.expression_solution(test5))
+        self.assertEqual(Stack.expression_solution(test5), 15)

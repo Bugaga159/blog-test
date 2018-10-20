@@ -61,19 +61,24 @@ def balance_brackets(x):
 def expression_solution(x):
     S1 = Stack()
     S2 = Stack()
+    if x is None:
+        return None
     for i in range(len(x)):
         S1.push(x[i])
-    while S1.size() > 0:
-        if S1.stack[0] == '+':
-            S2.push(S2.pop() + S2.pop())
-            S1.pop_head()
-        elif S1.stack[0] == '*':
-            S2.push(S2.pop() * S2.pop())
-            S1.pop_head()
-        elif S1.stack[0] == '=':
-            return S2.stack[0]
-        else:
-            S2.push(S1.pop_head())
+    if '+' in x and '*' in x:
+        while S1.size() > 0:
+            if S1.stack[0] == '+':
+                S2.push(S2.pop() + S2.pop())
+                S1.pop_head()
+            elif S1.stack[0] == '*':
+                S2.push(S2.pop() * S2.pop())
+                S1.pop_head()
+            elif S1.stack[0] == '=':
+                return S2.stack[0]
+            else:
+                S2.push(S1.pop_head())
+    else:
+        return False
     return S2.stack[0]
 
 num1 = [ 1, 2, '+', 3, '*' ]
