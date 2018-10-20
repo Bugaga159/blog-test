@@ -33,25 +33,15 @@ class Stack:
 
 def balance_brackets(x):
     checkArr = Stack()
-    x1 = x2 = 0
     if (len(x) % 2) != 0:       #Проверка на четное количество элементов
         return False
-    for i in range(len(x)):     #Для проверки на равное количество скобок откр/закр
-        if x[i] == '(':
-            x1 +=1
-        elif x[i] == ')':
-            x2 +=1
-    if x1 == x2:
-        for i in range(len(x)):
-            if checkArr.size() == 0 and x[i] == '(':
-                checkArr.push(x[i])
-            elif checkArr.peak_head() != x[i]:
-                checkArr.pop()
-            else:
-                checkArr.push(x[i])
-
-    else:
-        return False
+    for i in range(len(x)):
+        if checkArr.size() == 0 and x[i] == '(':
+            checkArr.push(x[i])
+        elif checkArr.peak_head() != x[i]:
+            checkArr.pop()
+        else:
+            checkArr.push(x[i])
     if checkArr.size() == 0:
         return True
     else:
@@ -81,8 +71,6 @@ def expression_solution(x):
         return False
     return S2.stack[0]
 
-num1 = [ 1, 2, '+', 3, '*' ]
-num2 = [8, 2, '+', 5, '*', 9, '+', '=']
-print('1 2 + 3 * =>',expression_solution(num1))
-print('8 2 + 5 * 9 + = =>',expression_solution(num2))
+num1 = '()(()())'
+print(balance_brackets(num1))
 
