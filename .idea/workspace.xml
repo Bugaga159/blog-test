@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f28fcd4-a21b-4a6b-b6ba-19ae12e6a276" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/DynArray/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/DynArray/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Stack/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/Stack/Stack.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,59 +58,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="542" />
+          <entry key="py" value="985" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="542" />
+          <entry key="Python" value="985" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/module/Stack/test_stack.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-63">
-                  <caret line="33" column="20" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+              <folding>
+                <marker date="1540047169591" expanded="true" signature="1488:2058" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,6 +104,7 @@
         <option value="$PROJECT_DIR$/module/DynArray/DynArray.py" />
         <option value="$PROJECT_DIR$/module/DynArray/test.py" />
         <option value="$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py" />
+        <option value="$PROJECT_DIR$/module/Stack/Stack.py" />
       </list>
     </option>
   </component>
@@ -204,7 +177,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove">
+  <component name="RunManager" selected="Python.Stack">
+    <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/Stack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/Stack/Stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,20 +224,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;DynArray.test.test_DynArray&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for LinkedList.test_linked_list.TestMain.test_return_all_nodes" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;LinkedList.test_linked_list.TestMain.test_return_all_nodes&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -276,19 +256,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for LinkedList.test_linked_list.TestMain.test_return_all_nodes" />
       <item itemvalue="Python tests.Unittests for test.test_DynArray.test_insert" />
       <item itemvalue="Python tests.Unittests for test.test_DynArray" />
       <item itemvalue="Python tests.Unittests for DynArray.test.test_DynArray" />
       <item itemvalue="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" />
+      <item itemvalue="Python.Stack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Stack" />
         <item itemvalue="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" />
         <item itemvalue="Python tests.Unittests for DynArray.test.test_DynArray" />
         <item itemvalue="Python tests.Unittests for test.test_DynArray" />
         <item itemvalue="Python tests.Unittests for test.test_DynArray.test_insert" />
-        <item itemvalue="Python tests.Unittests for LinkedList.test_linked_list.TestMain.test_return_all_nodes" />
       </list>
     </recent_temporary>
   </component>
@@ -314,15 +294,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_balance_brackets - 2018.10.20 at 13h 47m 13s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_balance_brackets" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_balance_brackets - 2018.10.20 at 13h 48m 00s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_balance_brackets" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_balance_brackets - 2018.10.20 at 13h 48m 31s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_balance_brackets" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_balance_brackets - 2018.10.20 at 13h 50m 06s.xml">
       <configuration name="Unittests for Stack.test_stack.TestStack.test_balance_brackets" configurationId="tests" />
     </history-entry>
@@ -344,18 +315,27 @@
     <history-entry file="Unittests_for_DynArray_test_test_DynArray - 2018.10.20 at 14h 12m 54s.xml">
       <configuration name="Unittests for DynArray.test.test_DynArray" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_DoublyLinkedList_test_double_linked_list_TestDoubleLinkedList_test_remove - 2018.10.20 at 14h 13m 21s.xml">
+      <configuration name="Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_DoublyLinkedList_test_double_linked_list_TestDoubleLinkedList_test_remove - 2018.10.20 at 17h 16m 12s.xml">
+      <configuration name="Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_DoublyLinkedList_test_double_linked_list_TestDoubleLinkedList_test_remove - 2018.10.20 at 17h 42m 51s.xml">
+      <configuration name="Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" weight="0.32974428" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38544473" />
+      <window_info active="true" anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" visible="true" weight="0.22237197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38544473" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -380,13 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -417,9 +390,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/Stack/test_stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="153">
           <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -427,10 +410,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py">
+    <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="477">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+          <folding>
+            <marker date="1540047169591" expanded="true" signature="1488:2058" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

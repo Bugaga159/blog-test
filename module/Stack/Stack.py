@@ -57,6 +57,27 @@ def balance_brackets(x):
     else:
         return False
 
-print(balance_brackets('(()((())()))'))
+# функция выполняет операции + и * , с элементами в Стеке
+def expression_solution(x):
+    S1 = Stack()
+    S2 = Stack()
+    for i in range(len(x)):
+        S1.push(x[i])
+    while S1.size() > 0:
+        if S1.stack[0] == '+':
+            S2.push(S2.pop() + S2.pop())
+            S1.pop_head()
+        elif S1.stack[0] == '*':
+            S2.push(S2.pop() * S2.pop())
+            S1.pop_head()
+        elif S1.stack[0] == '=':
+            return S2.stack[0]
+        else:
+            S2.push(S1.pop_head())
+    return S2.stack[0]
 
+num1 = [ 1, 2, '+', 3, '*' ]
+num2 = [8, 2, '+', 5, '*', 9, '+', '=']
+print('1 2 + 3 * =>',expression_solution(num1))
+print('8 2 + 5 * 9 + = =>',expression_solution(num2))
 
