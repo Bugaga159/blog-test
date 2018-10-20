@@ -1,5 +1,5 @@
 import unittest
-import DynArray as arr
+from . import DynArray as arr
 
 
 class test_DynArray(unittest.TestCase):

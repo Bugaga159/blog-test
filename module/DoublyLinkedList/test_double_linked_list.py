@@ -1,5 +1,5 @@
 import unittest
-import doubly
+from . import doubly
 
 
 
