@@ -61,10 +61,13 @@ class TestStack(unittest.TestCase):
         # данные для проверки не корректные, кол-во скобок разное
         test4 = Stack.balance_brackets('(()))')
 
+        test5 = Stack.balance_brackets('())(')
+
         self.assertTrue(test1)
         self.assertFalse(test2)
         self.assertTrue(test3)
         self.assertFalse(test4)
+        self.assertFalse(test5)
 
     def test_expression_solution(self):
         test1 = []

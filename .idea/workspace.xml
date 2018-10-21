@@ -69,14 +69,44 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1468892351">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="et --hard HEAD~1" value="1" />
+          <entry key="py" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Stack/test_stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="166">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -87,11 +117,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-              <folding>
-                <marker date="1540050690356" expanded="true" signature="1223:1860" ph="..." />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -131,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,16 +174,24 @@
               <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="Stack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for Stack.test_stack.TestStack.test_expression_solution">
+  <component name="RunManager" selected="Python tests.Unittests for Stack.test_stack.TestStack">
     <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,7 +241,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for DynArray.test.test_DynArray" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for Stack.test_stack.TestStack" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,7 +251,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;DynArray.test.test_DynArray&quot;" />
+      <option name="_new_target" value="&quot;Stack.test_stack.TestStack&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -250,19 +284,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for DynArray.test.test_DynArray" />
       <item itemvalue="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" />
       <item itemvalue="Python.Stack" />
       <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack.test_expression_solution" />
       <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack.test_balance_brackets" />
+      <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack.test_expression_solution" />
-        <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack.test_balance_brackets" />
+        <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack" />
         <item itemvalue="Python.Stack" />
+        <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack.test_balance_brackets" />
+        <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack.test_expression_solution" />
         <item itemvalue="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList.test_remove" />
-        <item itemvalue="Python tests.Unittests for DynArray.test.test_DynArray" />
       </list>
     </recent_temporary>
   </component>
@@ -320,16 +354,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12270804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12223393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" weight="0.22237197" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" visible="true" weight="0.22210184" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32884097" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -357,16 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/LinkedList/test_linked_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/DynArray/DynArray.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -378,9 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -388,16 +409,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/et --hard HEAD~1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2894" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Stack/test_stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Stack/test_stack.py">
+    <entry file="file://$PROJECT_DIR$/test_init.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/LinkedList/test_linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="255">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -406,11 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-          <folding>
-            <marker date="1540050690356" expanded="true" signature="1223:1860" ph="..." />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
         </state>
       </provider>
     </entry>

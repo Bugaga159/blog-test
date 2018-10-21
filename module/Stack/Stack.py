@@ -33,7 +33,7 @@ class Stack:
 
 def balance_brackets(x):
     checkArr = Stack()
-    if (len(x) % 2) != 0:       #Проверка на четное количество элементов
+    if (len(x) % 2) != 0:  # Проверка на четное количество элементов
         return False
     for i in range(len(x)):
         if checkArr.size() == 0 and x[i] == '(':
@@ -46,6 +46,7 @@ def balance_brackets(x):
         return True
     else:
         return False
+
 
 # функция выполняет операции + и * , с элементами в Стеке
 def expression_solution(x):
@@ -71,6 +72,8 @@ def expression_solution(x):
         return False
     return S2.stack[0]
 
-num1 = '()(()())'
+num1 = '())('
 print(balance_brackets(num1))
 
+num2 = [1, 2, '+', 3, '*']
+print(expression_solution(num2))
