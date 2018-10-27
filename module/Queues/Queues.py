@@ -13,9 +13,14 @@ class Queue:
 
 
 # функция, которая "вращает" очередь по кругу на N элементов.
-def rotation(queue, n=0):
+def rotation(item, n=0):
     while n:
-        queue.insert(0, queue.pop())
+        item.insert(0, item.pop())
         n -= 1
-    return queue
+    return item
+
+
+
+
+
 

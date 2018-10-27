@@ -72,8 +72,3 @@ def expression_solution(x):
         return False
     return S2.stack[0]
 
-num1 = '())('
-print(balance_brackets(num1))
-
-num2 = [1, 2, '+', 3, '*']
-print(expression_solution(num2))
