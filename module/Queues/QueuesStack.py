@@ -20,3 +20,11 @@ class QueuesThroughTheStack:
 
     def size(self):
         return self.item.size()
+
+test = QueuesThroughTheStack()
+test.enqueue(124)
+test.enqueue(4)
+test.enqueue(64)
+test.enqueue(8)
+res = test.item.stack
+print(res)

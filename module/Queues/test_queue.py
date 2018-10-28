@@ -23,14 +23,14 @@ class TestQueues(unittest.TestCase):
         # Сдвигаем элементы Очереди на 1 позицию по кругу
         # [ 4, 3, 2, 1, 0] => [1, 4, 3, 2, 1]
         items1 = test.items
-        test.items = Queues.rotation(items1, 1)
-        self.assertEqual(test.items[0], 0)
+        res = Queues.rotation(items1, 1)
+        self.assertEqual(res[0], 0)
 
         # Сдвигаем элементы Очереди на 4 позицию по кругу
         # [1, 4, 3, 2, 1]=> [ 4, 3, 2, 1, 0]
         items2 = test.items
-        test.items = Queues.rotation(items2, 4)
-        self.assertEqual(test.items[0], 4)
+        res2 = Queues.rotation(items2, 1)
+        self.assertEqual(res2[0], 4)
 
 
 class TestQueuesThroughTheStack(unittest.TestCase):

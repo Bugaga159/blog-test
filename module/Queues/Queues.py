@@ -21,13 +21,6 @@ def rotation(item, n=0):
         n -= 1
     return rot.items
 
-test = Queue()
-test.enqueue(243)
-test.enqueue(34)
-test.enqueue(1)
-test.enqueue(66)
-arr = test.items
-print(rotation(arr, 1))
 
 
 
