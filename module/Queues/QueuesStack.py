@@ -1,5 +1,4 @@
 from module.Stack import Stack
-
 class QueuesThroughTheStack:
     def __init__(self):
         self.item = Stack.Stack()

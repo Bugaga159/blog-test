@@ -1,7 +1,6 @@
 import unittest
-from . import Queues
-from . import QueuesStack as Stack
-
+from module.Queues import Queues
+from module.Queues import QueuesStack as Stack
 
 class TestQueues(unittest.TestCase):
 
@@ -47,11 +46,13 @@ class TestQueuesThroughTheStack(unittest.TestCase):
 
         # Проверка последнего элемента Очереди на соответствие
         # test.item.stack[0] == 78
-        self.assertEqual(test.item.stack[0], 78)
+        res1 = test.item.stack
+        self.assertEqual(res1[0], 78)
 
         # Проверка первого элемента Очереди на соответствие
         # test.item.stack[4] == 12
-        self.assertEqual(test.item.stack[4], 12)
+        res2 = test.item.stack
+        self.assertEqual(res2[4], 12)
 
     '''
         Тест на проверку вывода и удаления из "Очереди" первого элемента
