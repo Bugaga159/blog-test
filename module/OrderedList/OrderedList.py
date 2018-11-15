@@ -15,9 +15,9 @@ class OrderedList:
       self.sort = 'DESC'
   # Метод сравнения двух значений
   def comparison(self, val1, val2):
-    if val1 >= val2:
+    if val1 > val2:
       return True
-    elif val1 < val2:
+    elif val1 <= val2:
       return False
         
   # Добавление в список
