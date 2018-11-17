@@ -17,12 +17,14 @@ class Deque:
     def size(self):
         return len(self.queue)
 
+# Проверяет строку, является ли некоторая строка палиндромом
+def palindrome(strCheck):
+    n = Deque()
+    n.queue = list(strCheck)
+    while n.size() != 0:
+        if n.removeFront() == n.removeTail():
+            continue
+        else:
+            return False
+    return True
 
-deq = Deque()
-deq.addFront("f1")
-deq.addTail("t1")
-deq.addFront("f2")
-deq.addTail("t2")
-deq.addTail("t3")
-
-print(deq.queue)
