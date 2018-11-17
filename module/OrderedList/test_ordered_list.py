@@ -36,3 +36,47 @@ class TestOrderedList(unittest.TestCase):
         test.remove(566)
         self.assertEqual(91, test.tail.value)
         self.assertEqual(91, test.head.next.next.value)
+
+    def test_search(self):
+        test = OrderedList()
+        test.add_in_tail(Node(45))
+        test.add_in_tail(Node(23))
+        test.add_in_tail(Node(167))
+        test.add_in_tail(Node(46))
+        test.add_in_tail(Node(71))
+        self.assertEqual(test.head.value, 23)
+        self.assertTrue(test.search(167))
+        self.assertTrue(test.search(45))
+        self.assertFalse(test.search(72))
+
+class TestCompSTR(unittest.TestCase):
+
+    def test_add_in_tail(self):
+        test = СomparisonStrings()
+        test.add_in_tail(Node('hello'))
+        test.add_in_tail(Node('  who are you'))
+        test.add_in_tail(Node(' bay!  '))
+
+        self.assertEqual('bay!', test.head.value)
+        self.assertEqual('who are you', test.tail.value)
+
+    def test_remove(self):
+        test = СomparisonStrings()
+        test.add_in_tail(Node('My name is Andrey'))
+        test.add_in_tail(Node('Adress'))
+        test.add_in_tail(Node('year'))
+
+        self.assertEqual('Adress', test.head.value)
+        self.assertEqual('year', test.tail.value)
+
+        test.remove('Adress')
+        self.assertEqual('My name is Andrey', test.head.value)
+
+    def test_search(self):
+        test = СomparisonStrings()
+        test.add_in_tail(Node('Name'))
+        test.add_in_tail(Node('Nomber'))
+        test.add_in_tail(Node('Date'))
+
+        self.assertTrue(test.search('Date'))
+        self.assertFalse(test.search('date'))
