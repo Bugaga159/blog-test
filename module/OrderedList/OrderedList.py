@@ -48,7 +48,6 @@ class OrderedList:
               self.tail = item
               break
 
-  # Удалить значение в связанном списке
   def remove(self, val):
       if self.head == None:
           return None
@@ -58,9 +57,13 @@ class OrderedList:
           node = self.head
           while node.next is not None:
               if node.next.value == val:
-                  if self.tail == node.next:
-                      self.tail == node.next.next
+                  if node.next == self.tail:
+                      self.tail = node
+                      node.next = None
+                      break
                   node.next = node.next.next
                   break
               node = node.next
- 
+
+
+

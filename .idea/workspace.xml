@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/module/Queues/test_queue.py" line="3" mnemonic="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="2f28fcd4-a21b-4a6b-b6ba-19ae12e6a276" name="Default Changelist" comment="Тесты для проверки модуля Stack">
-      <change afterPath="$PROJECT_DIR$/module/Deque/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/OrderedList/OrderedList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/OrderedList/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Deque/Deque.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/Deque/Deque.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Deque/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/Deque/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/LinkedList/LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/LinkedList/LinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/LinkedList/test_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/LinkedList/test_linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/OrderedList/OrderedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/OrderedList/OrderedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,26 +58,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="26" />
+          <entry key="py" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="26" />
+          <entry key="Python" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="32" />
           <entry key="dummy" value="1" />
-          <entry key="py" value="1702" />
+          <entry key="py" value="2089" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Python" value="1734" />
+          <entry key="Python" value="2121" />
         </counts>
       </usages-collector>
     </session>
@@ -119,33 +113,48 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Deque/Deque.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Deque/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Deque/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.45695364">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module/OrderedList/test_ordered_list.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="314">
+                  <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                    <marker date="1542449841530" expanded="true" signature="85:86" ph="..." />
+                    <marker date="1542449841530" expanded="true" signature="85:91" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module/OrderedList/OrderedList.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="229">
+                  <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module/LinkedList/LinkedList.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -169,6 +178,10 @@
         <option value="$PROJECT_DIR$/module/Queues/QueuesStack.py" />
         <option value="$PROJECT_DIR$/module/Queues/test_queue.py" />
         <option value="$PROJECT_DIR$/module/Deque/Deque.py" />
+        <option value="$PROJECT_DIR$/module/LinkedList/test_linked_list.py" />
+        <option value="$PROJECT_DIR$/module/OrderedList/OrderedList.py" />
+        <option value="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" />
+        <option value="$PROJECT_DIR$/module/LinkedList/LinkedList.py" />
       </list>
     </option>
   </component>
@@ -201,6 +214,24 @@
               <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="Deque" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="DoublyLinkedList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="OrderedList" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,8 +255,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Deque">
-    <configuration name="Deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove">
+    <configuration name="OrderedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -233,11 +264,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/Deque" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/OrderedList" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/Deque/Deque.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/OrderedList/OrderedList.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -267,48 +298,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QueuesStack" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/Queues" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/Queues/QueuesStack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/Stack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/Stack/Stack.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_queue" type="PythonConfigurationType" factoryName="Python">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -330,7 +319,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Stack.test_stack.TestStack" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for LinkedList.test_linked_list.TestMain.test_remove" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,24 +329,83 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Stack.test_stack.TestStack&quot;" />
+      <option name="_new_target" value="&quot;LinkedList.test_linked_list.TestMain.test_remove&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for LinkedList.test_linked_list.TestMain.test_return_all_nodes" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;LinkedList.test_linked_list.TestMain.test_return_all_nodes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList.test_remove&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_ordered_list.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/module/OrderedList/test_ordered_list.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" />
       <item itemvalue="Python.test_queue" />
       <item itemvalue="Python.Queues" />
-      <item itemvalue="Python.Stack" />
-      <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack" />
-      <item itemvalue="Python.QueuesStack" />
-      <item itemvalue="Python.Deque" />
+      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" />
+      <item itemvalue="Python tests.Unittests in test_ordered_list.py" />
+      <item itemvalue="Python tests.Unittests for LinkedList.test_linked_list.TestMain.test_remove" />
+      <item itemvalue="Python tests.Unittests for LinkedList.test_linked_list.TestMain.test_return_all_nodes" />
+      <item itemvalue="Python.OrderedList" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Deque" />
-        <item itemvalue="Python tests.Unittests for Stack.test_stack.TestStack" />
-        <item itemvalue="Python.QueuesStack" />
-        <item itemvalue="Python.Stack" />
+        <item itemvalue="Python tests.Unittests in test_ordered_list.py" />
+        <item itemvalue="Python.OrderedList" />
+        <item itemvalue="Python tests.Unittests for LinkedList.test_linked_list.TestMain.test_return_all_nodes" />
+        <item itemvalue="Python tests.Unittests for LinkedList.test_linked_list.TestMain.test_remove" />
+        <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" />
       </list>
     </recent_temporary>
   </component>
@@ -383,35 +431,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_expression_solution - 2018.10.20 at 18h 12m 13s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_expression_solution" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 06m 16s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_expression_solution - 2018.10.20 at 18h 12m 52s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_expression_solution" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 07m 10s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_expression_solution - 2018.10.20 at 18h 17m 16s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_expression_solution" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 07m 57s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_expression_solution - 2018.10.20 at 18h 17m 21s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_expression_solution" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 08m 26s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_expression_solution - 2018.10.20 at 18h 17m 29s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_expression_solution" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 09m 40s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack_test_balance_brackets - 2018.10.20 at 18h 50m 52s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack.test_balance_brackets" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 10m 29s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack - 2018.10.28 at 19h 36m 53s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 12m 26s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack - 2018.10.28 at 19h 38m 13s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 13m 02s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack - 2018.10.28 at 19h 39m 35s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 15m 49s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Stack_test_stack_TestStack - 2018.10.28 at 19h 41m 47s.xml">
-      <configuration name="Unittests for Stack.test_stack.TestStack" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 13h 15m 58s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -423,8 +471,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" visible="true" weight="0.22102426" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32884097" />
+      <window_info anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" weight="0.22102426" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -477,22 +525,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/et --hard HEAD~1" />
     <entry file="file://$PROJECT_DIR$/test_init.py" />
-    <entry file="file://$PROJECT_DIR$/module/LinkedList/test_linked_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -503,13 +537,6 @@
     <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/module/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/LinkedList/LinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Stack/test_stack.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -556,8 +583,105 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Deque/Deque.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="459">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/LinkedList/test_linked_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/doubly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/contextlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/diff_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="652" selection-start-line="652" selection-end-line="652" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/OrderedList/test_ordered_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1542449841530" expanded="true" signature="85:86" ph="..." />
+            <marker date="1542449841530" expanded="true" signature="85:91" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/OrderedList/OrderedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/LinkedList/LinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
         </state>
       </provider>
     </entry>

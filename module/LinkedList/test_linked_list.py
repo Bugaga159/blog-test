@@ -23,7 +23,7 @@ class TestMain(unittest.TestCase):
 
     # тест на проверку данных в списке
     def test_remove(self):
-        test1 = main.LinkedList()
+        test1 = LinkedList()
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
