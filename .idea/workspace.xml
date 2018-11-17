@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f28fcd4-a21b-4a6b-b6ba-19ae12e6a276" name="Default Changelist" comment="Тесты для проверки модуля Stack">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/OrderedList/OrderedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/OrderedList/OrderedList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/OrderedList/СomparisonStrings.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,26 +56,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="55" />
+          <entry key="py" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="55" />
+          <entry key="Python" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="32" />
           <entry key="dummy" value="6" />
-          <entry key="py" value="2959" />
+          <entry key="py" value="3547" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="43" />
-          <entry key="Python" value="2991" />
+          <entry key="Python" value="3579" />
         </counts>
       </usages-collector>
     </session>
@@ -119,12 +117,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/module/OrderedList/test_ordered_list.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="81" column="45" lean-forward="true" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+                <state relative-caret-position="-179">
+                  <caret line="75" column="34" lean-forward="true" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
-                    <marker date="1542467211448" expanded="true" signature="85:86" ph="..." />
-                    <marker date="1542467211448" expanded="true" signature="85:91" ph="..." />
+                    <marker date="1542472373918" expanded="true" signature="85:86" ph="..." />
+                    <marker date="1542472373918" expanded="true" signature="85:91" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -137,8 +135,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/module/OrderedList/OrderedList.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="90" selection-start-line="90" selection-end-line="90" />
+                <state relative-caret-position="136">
+                  <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module/Queues/Queues.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
@@ -173,8 +180,8 @@
         <option value="$PROJECT_DIR$/module/LinkedList/LinkedList.py" />
         <option value="$PROJECT_DIR$/module/OrderedList/СomparisonStrings.py" />
         <option value="$PROJECT_DIR$/module/OrderedList/test_comparison.py" />
-        <option value="$PROJECT_DIR$/module/OrderedList/OrderedList.py" />
         <option value="$PROJECT_DIR$/module/OrderedList/test_ordered_list.py" />
+        <option value="$PROJECT_DIR$/module/OrderedList/OrderedList.py" />
       </list>
     </option>
   </component>
@@ -216,6 +223,12 @@
               <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="OrderedList" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Queues" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -239,7 +252,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search">
+  <component name="RunManager" selected="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_add_in_tail">
+    <configuration name="OrderedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/OrderedList" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/OrderedList/OrderedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Queues" type="PythonConfigurationType" factoryName="Python">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -296,7 +330,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,11 +340,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestCompSTR.test_search&quot;" />
+      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestCompSTR.test_arr&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_arr" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,21 +354,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail&quot;" />
+      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList.test_arr&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -370,19 +390,19 @@
       <item itemvalue="Python.test_queue" />
       <item itemvalue="Python.Queues" />
       <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" />
+      <item itemvalue="Python.OrderedList" />
+      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_arr" />
+      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" />
       <item itemvalue="Python tests.Unittests in test_ordered_list.py" />
       <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_add_in_tail" />
-      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" />
-      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" />
-      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" />
-        <item itemvalue="Python tests.Unittests in test_ordered_list.py" />
-        <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList" />
-        <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" />
         <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_add_in_tail" />
+        <item itemvalue="Python tests.Unittests in test_ordered_list.py" />
+        <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" />
+        <item itemvalue="Python.OrderedList" />
+        <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_arr" />
       </list>
     </recent_temporary>
   </component>
@@ -408,35 +428,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_add_in_tail - 2018.11.17 at 17h 56m 25s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_add_in_tail" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 17h 56m 30s.xml">
+    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 19h 01m 00s.xml">
       <configuration name="Unittests in test_ordered_list.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 18h 03m 17s.xml">
+    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 19h 01m 07s.xml">
       <configuration name="Unittests in test_ordered_list.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_search - 2018.11.17 at 18h 05m 11s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList_test_remove - 2018.11.17 at 18h 05m 49s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestOrderedList - 2018.11.17 at 18h 05m 55s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 18h 06m 00s.xml">
+    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 19h 01m 32s.xml">
       <configuration name="Unittests in test_ordered_list.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_search - 2018.11.17 at 18h 06m 13s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" configurationId="tests" />
+    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 19h 03m 03s.xml">
+      <configuration name="Unittests in test_ordered_list.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_search - 2018.11.17 at 18h 06m 52s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_arr - 2018.11.17 at 19h 03m 44s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_search - 2018.11.17 at 18h 06m 58s.xml">
-      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_search" configurationId="tests" />
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_arr - 2018.11.17 at 19h 11m 20s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_arr - 2018.11.17 at 19h 13m 22s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_arr - 2018.11.17 at 19h 32m 43s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_arr" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_ordered_list_py - 2018.11.17 at 19h 32m 55s.xml">
+      <configuration name="Unittests in test_ordered_list.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_OrderedList_test_ordered_list_TestCompSTR_test_add_in_tail - 2018.11.17 at 19h 34m 38s.xml">
+      <configuration name="Unittests for OrderedList.test_ordered_list.TestCompSTR.test_add_in_tail" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -513,13 +533,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/et --hard HEAD~1" />
     <entry file="file://$PROJECT_DIR$/test_init.py" />
-    <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/module/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -528,13 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Queues/Queues.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -652,28 +658,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/LinkedList/LinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="697">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Queues/Queues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/OrderedList/OrderedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="136">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/OrderedList/test_ordered_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="81" column="45" lean-forward="true" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+        <state relative-caret-position="-179">
+          <caret line="75" column="34" lean-forward="true" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1542467211448" expanded="true" signature="85:86" ph="..." />
-            <marker date="1542467211448" expanded="true" signature="85:91" ph="..." />
+            <marker date="1542472373918" expanded="true" signature="85:86" ph="..." />
+            <marker date="1542472373918" expanded="true" signature="85:91" ph="..." />
           </folding>
         </state>
       </provider>

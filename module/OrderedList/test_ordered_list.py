@@ -49,6 +49,18 @@ class TestOrderedList(unittest.TestCase):
         self.assertTrue(test.search(45))
         self.assertFalse(test.search(72))
 
+    def test_arr(self):
+        test = OrderedList()
+        test.add_in_tail(Node(45))
+        test.add_in_tail(Node(23))
+        test.add_in_tail(Node(167))
+        test.sortArr()
+        self.assertEqual([23, 45, 167], test.array)
+
+        test.sortArr(1)
+        self.assertEqual([167, 45, 23], test.array)
+
+
 class TestCompSTR(unittest.TestCase):
 
     def test_add_in_tail(self):
@@ -80,3 +92,15 @@ class TestCompSTR(unittest.TestCase):
 
         self.assertTrue(test.search('Date'))
         self.assertFalse(test.search('date'))
+
+    def test_arr(self):
+        test = СomparisonStrings()
+        test.add_in_tail(Node('Name'))
+        test.add_in_tail(Node('Nomber'))
+        test.add_in_tail(Node('Date'))
+
+        test.sortArr()
+        self.assertEqual(['Date', 'Name', 'Nomber'], test.array)
+
+        test.sortArr(1)
+        self.assertEqual(['Nomber', 'Name', 'Date'], test.array)

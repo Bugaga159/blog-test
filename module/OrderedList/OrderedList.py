@@ -4,15 +4,32 @@ class Node:
         self.next = None
 
 class OrderedList:
-    def __init__(self,s = 0):
+
+    def __init__(self):
         self.head = None
         self.tail = None
-        self.sort = None
+        self.sortArrs = None
+        self.array = []
 
-        if s == 0:
-          self.sort = 'ASC'
-        elif s == 1:
-          self.sort = 'DESC'
+
+
+    def sortArr(self, lev=0):
+        node = self.head
+        self.array = []
+        while node is not None:
+            self.array.append(node.value)
+            node = node.next
+        if lev == 0:
+            self.sortArrs = 'ASC'
+        elif lev == 1:
+            self.sortArrs = 'DESC'
+            res = []
+            for i in self.array:
+                res.insert(0, i)
+            self.array = res
+
+
+
 
     # Метод сравнения двух значений
     def comparison(self, val1, val2):
@@ -23,6 +40,7 @@ class OrderedList:
 
     # Добавление в список
     def add_in_tail(self, item):
+
         if self.head  is None:
           self.head = self.tail = item
         else:
@@ -74,6 +92,8 @@ class OrderedList:
                 return True
             node = node.next
         return None
+
+
 
 class СomparisonStrings(OrderedList):
     def add_in_tail(self, item):
