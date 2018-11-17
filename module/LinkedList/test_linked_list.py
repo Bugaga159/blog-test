@@ -4,7 +4,6 @@ from . import LinkedList
 
 class TestMain(unittest.TestCase):
 
-
     # Тест на проверкудобавление в список
     def test_return_all_nodes(self):
         test1 = LinkedList.LinkedList()
@@ -23,13 +22,13 @@ class TestMain(unittest.TestCase):
 
     # тест на проверку данных в списке
     def test_remove(self):
-        test1 = LinkedList()
+        test1 = LinkedList.LinkedList()
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
-        test1.remove(54)
-        test1.remove(64)
+        test1.delete(54)
+        test1.delete(64)
         ran = test1.return_all_nodes()
 
         self.assertEquals(ran, [35, 35])
@@ -41,31 +40,31 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
-        test1.removeAllVal(35)
-        test1.removeAllVal(64)
+        test1.delete(35, True)
+        test1.delete(64, True)
         ran = test1.return_all_nodes()
 
         self.assertEquals(ran, [54])
 
     # Тест проверяет, на пустоту  связанного списка
-    def test_clearAll(self):
+    def test_clean(self):
         test1 = LinkedList.LinkedList()
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
-        res = test1.clearAll()
+        res = test1.clean()
 
         self.assertEquals(res, None)
         self.assertIsNone(res)
 
     # Тест на поиск в списке
-    def test_findVal(self):
+    def test_find_all(self):
         test1 = LinkedList.LinkedList()
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(12))
-        res1 = test1.findVal(35)
-        res2 = test1.findVal(14)
+        res1 = test1.find_all(35)
+        res2 = test1.find_all(14)
 
         self.assertEquals(res1, [[35, 1], [35, 3]])
         self.assertEquals(res2, [])
@@ -77,22 +76,22 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
-        res = test1.lengthList()
+        res = test1.len()
 
         self.assertEquals(res, 4)
         self.assertIsNotNone(res)
 
     # Тест на добавление значение, после заданного  значения
-    def test_add_val_after(self):
+    def test_insert(self):
         test1 = LinkedList.LinkedList()
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
-        test1.add_val_after(35, 75)
+        test1.insert(35, 75)
         res1 = test1.return_all_nodes()
         self.assertEquals(res1, [35, 75, 54, 35, 64])
-        test1.add_val_after(64, 75)
+        test1.insert(64, 75)
         res2 = test1.return_all_nodes()
         self.assertEquals(res2, [35, 75, 54, 35, 64, 75])
 
@@ -111,8 +110,8 @@ class TestMain(unittest.TestCase):
         test2.add_in_tail(LinkedList.Node(35))
         test2.add_in_tail(LinkedList.Node(64))
 
-        res = main.Comparison(test1, test2)
-        self.assertEquals(res, [70, 118])
+        res = LinkedList.Comparison(test1, test2)
+        self.assertEquals([70, 118], res)
 
 
 if __name__ == "__main__":

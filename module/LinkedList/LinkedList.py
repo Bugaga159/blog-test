@@ -41,11 +41,16 @@ class LinkedList:
             node = node.next
         return None
 
-    def remove(self, val):
+    # Удаление узла по значение, если нужно удалить во всех узлах значение, то all=TRUE
+    def delete(self, val, all=False):
         if self.head == None:
-            return None
+            return False
         elif self.head.value == val:
-            self.head = self.head.next
+            if all:
+                self.head = self.head.next
+                self.delete(val, True)
+            else:
+                self.head = self.head.next
         else:
             node = self.head
             while node.next is not None:
@@ -54,33 +59,23 @@ class LinkedList:
                         self.tail = node
                         node.next = None
                         break
-                    node.next = node.next.next
-                    break
-                node = node.next
-
-    # Удалить заданное значение в связанном списке все
-    def removeAllVal(self, val):
-        if self.head.value == val:
-            self.head = self.head.next
-        if self.head == None:
-            return None
-        else:
-            node = self.head
-            while node.next is not None:
-                if node.next.value == val:
-                    if self.tail == node.next:
-                        self.tail == node.next.next
-                    node.next = node.next.next
+                    elif all == False:
+                        node.next = node.next.next
+                        break
+                    else:
+                        node.next = node.next.next
                 else:
                     node = node.next
 
+
+
     # Очистить список
-    def clearAll(self):
+    def clean(self):
         self.head = None
         self.tail = None
 
     # Найти заданое значение все в связанном списке
-    def findVal(self, val):
+    def find_all(self, val):
         if self.head == None:
             return None
         else:
@@ -95,7 +90,7 @@ class LinkedList:
             return res
 
     # Длина списка
-    def lengthList(self):
+    def len(self):
         node = self.head
         len = 1
         while node.next != None:
@@ -104,14 +99,14 @@ class LinkedList:
         return len
 
     # Вставки узла после заданного узла
-    def add_val_after(self, val1, val2):
+    def insert(self, afterNode, newNode):
         node = self.head
         if self.head == None:
             return None
         else:
             while node is not None:
-                if node.value == val1:
-                    prev = Node(val2)
+                if node.value == afterNode:
+                    prev = Node(newNode)
                     prev.next = node.next
                     node.next = prev
                     break
@@ -126,8 +121,8 @@ class LinkedList:
 
 
 def Comparison(link1, link2):
-    length1 = link1.lengthList()
-    length2 = link2.lengthList()
+    length1 = link1.len()
+    length2 = link2.len()
     list_sum = LinkedList()
     list_link1 = link1.head
     list_link2 = link2.head
@@ -139,18 +134,4 @@ def Comparison(link1, link2):
             list_link1 = list_link1.next
             list_link2 = list_link2.next
     return list_sum.return_all_nodes()
-
-
-s_list1 = LinkedList()
-s_list2 = LinkedList()
-s_list1.add_in_tail(Node(23))
-s_list1.add_in_tail(Node(23))
-s_list1.add_in_tail(Node(2))
-s_list1.add_in_tail(Node(83))
-s_list1.add_in_tail(Node(62))
-s_list2.add_in_tail(Node(3))
-s_list2.add_in_tail(Node(42))
-s_list2.add_in_tail(Node(35))
-s_list2.add_in_tail(Node(8))
-
 
