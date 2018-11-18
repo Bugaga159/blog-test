@@ -15,7 +15,7 @@ class TestMain(unittest.TestCase):
         ran = test1.return_all_nodes()
 
         #тест на проверку данных в списке
-        self.assertEquals(ran, [35])
+        self.assertEqual(ran, [35])
 
         # тест на проверку head != None
         self.assertIsNotNone(test1.head)
@@ -31,7 +31,7 @@ class TestMain(unittest.TestCase):
         test1.delete(64)
         ran = test1.return_all_nodes()
 
-        self.assertEquals(ran, [35, 35])
+        self.assertEqual(ran, [35, 35])
 
     # Тест проверяет, удалены ли все заданные значение, при вызове метода removeAllVal()
     def test_removeAllVal(self):
@@ -44,7 +44,7 @@ class TestMain(unittest.TestCase):
         test1.delete(64, True)
         ran = test1.return_all_nodes()
 
-        self.assertEquals(ran, [54])
+        self.assertEqual(ran, [54])
 
     # Тест проверяет, на пустоту  связанного списка
     def test_clean(self):
@@ -53,7 +53,7 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(54))
         res = test1.clean()
 
-        self.assertEquals(res, None)
+        self.assertEqual(res, None)
         self.assertIsNone(res)
 
     # Тест на поиск в списке
@@ -64,10 +64,10 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(12))
         res1 = test1.find_all(35)
-        res2 = test1.find_all(14)
+        res2 = test1.find_all(13)
 
-        self.assertEquals(res1, [[35, 1], [35, 3]])
-        self.assertEquals(res2, [])
+        self.assertEqual(test1.head, res1[0])
+        self.assertEqual([], res2)
 
     # Тест на определения длины списка
     def test_lengthList(self):
@@ -78,7 +78,7 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(64))
         res = test1.len()
 
-        self.assertEquals(res, 4)
+        self.assertEqual(res, 4)
         self.assertIsNotNone(res)
 
     # Тест на добавление значение, после заданного  значения
@@ -90,10 +90,10 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(64))
         test1.insert(35, 75)
         res1 = test1.return_all_nodes()
-        self.assertEquals(res1, [35, 75, 54, 35, 64])
+        self.assertEqual(res1, [35, 75, 54, 35, 64])
         test1.insert(64, 75)
         res2 = test1.return_all_nodes()
-        self.assertEquals(res2, [35, 75, 54, 35, 64, 75])
+        self.assertEqual(res2, [35, 75, 54, 35, 64, 75])
 
     '''
     Тест на проверку функцию, которая получает на вход
@@ -111,7 +111,7 @@ class TestMain(unittest.TestCase):
         test2.add_in_tail(LinkedList.Node(64))
 
         res = LinkedList.Comparison(test1, test2)
-        self.assertEquals([70, 118], res)
+        self.assertEqual([70, 118], res)
 
 
 if __name__ == "__main__":
