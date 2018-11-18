@@ -33,6 +33,12 @@ class TestMain(unittest.TestCase):
 
         self.assertEqual(ran, [35, 35])
 
+        test2 = LinkedList.LinkedList()
+        test2.add_in_tail(LinkedList.Node(35))
+        test2.delete(35)
+        self.assertEqual(None, test2.head)
+        self.assertEqual(None, test2.tail)
+
     # Тест проверяет, удалены ли все заданные значение, при вызове метода removeAllVal()
     def test_removeAllVal(self):
         test1 = LinkedList.LinkedList()
@@ -45,6 +51,13 @@ class TestMain(unittest.TestCase):
         ran = test1.return_all_nodes()
 
         self.assertEqual(ran, [54])
+
+        test2 = LinkedList.LinkedList()
+        test2.add_in_tail(LinkedList.Node(35))
+        test2.add_in_tail(LinkedList.Node(35))
+        test2.delete(35, True)
+        self.assertEqual(None, test2.head)
+        self.assertEqual(None, test2.tail)
 
     # Тест проверяет, на пустоту  связанного списка
     def test_clean(self):

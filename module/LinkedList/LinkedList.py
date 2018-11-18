@@ -44,13 +44,16 @@ class LinkedList:
     # Удаление узла по значение, если нужно удалить во всех узлах значение, то all=TRUE
     def delete(self, val, all=False):
         if self.head == None:
-            return False
+            return True
         elif self.head.value == val:
+            if self.head == self.tail:
+                self.tail = None
             if all:
                 self.head = self.head.next
                 self.delete(val, True)
             else:
                 self.head = self.head.next
+
         else:
             node = self.head
             while node.next is not None:
