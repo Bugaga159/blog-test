@@ -85,7 +85,7 @@ class LinkedList:
             while node is not None:
                 num += 1
                 if node.value == val:
-                    res.append([node.value, num])
+                    res.append(node)
                 node = node.next
             return res
 
