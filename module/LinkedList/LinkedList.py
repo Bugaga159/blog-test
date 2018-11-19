@@ -104,7 +104,8 @@ class LinkedList:
     def insert(self, afterNode, newNode):
 
         if self.head is None and afterNode != self.head:
-            self.add_in_tail(Node(newNode))
+            self.head = Node(newNode)
+            self.tail = self.head
             return True
         else:
             node = self.head
@@ -116,6 +117,7 @@ class LinkedList:
                     return True
                 node = node.next
             return False
+
 
 """
 Функция Comparison(),функцию, которая получает на вход два связанных списка,
