@@ -107,7 +107,7 @@ class TestMain(unittest.TestCase):
     def test_insert(self):
         test1 = LinkedList.LinkedList()
         # Новый узел для вставки
-        newNode1 = LinkedList.Node(65)
+        newNode1 = 65
         res1 = test1.insert(94, newNode1)
         self.assertTrue(res1)
         self.assertEqual(65, test1.head.value)
@@ -118,7 +118,7 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(64))
 
         # Новый узел для вставки
-        newNode2 = LinkedList.Node(75)
+        newNode2 = 75
         res2 = test1.insert(35, newNode2)
         self.assertTrue(res2)
 
