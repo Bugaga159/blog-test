@@ -106,16 +106,21 @@ class TestMain(unittest.TestCase):
     # Тест на добавление значение, после заданного  значения
     def test_insert(self):
         test1 = LinkedList.LinkedList()
+        res1 = test1.insert(32, 65)
+        self.assertTrue(res1)
+        self.assertEqual(65, test1.head.value)
+
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
-        test1.insert(35, 75)
-        res1 = test1.return_all_nodes()
-        self.assertEqual([35, 75, 54, 35, 64], res1)
-        test1.insert(64, 75)
-        res2 = test1.return_all_nodes()
-        self.assertEqual([35, 75, 54, 35, 64, 75], res2)
+
+        res2 = test1.insert(35, 75)
+        self.assertTrue(res2)
+
+        res3 = test1.insert(36, 75)
+        self.assertFalse(res3)
+
 
     '''
     Тест на проверку функцию, которая получает на вход

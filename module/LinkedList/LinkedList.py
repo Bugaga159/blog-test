@@ -105,15 +105,16 @@ class LinkedList:
         node = self.head
         if self.head == None:
             self.add_in_tail(Node(newNode))
+            return True
         else:
             while node is not None:
                 if node.value == afterNode:
                     prev = Node(newNode)
                     prev.next = node.next
                     node.next = prev
-                    break
+                    return True
                 node = node.next
-
+            return False
 
 """
 Функция Comparison(),функцию, которая получает на вход два связанных списка,
