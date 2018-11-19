@@ -89,10 +89,14 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
-        res = test1.len()
+        res1 = test1.len()
 
-        self.assertEqual(res, 4)
-        self.assertIsNotNone(res)
+        self.assertEqual(4, res1)
+
+        test2 = LinkedList.LinkedList()
+        res2 = test2.len()
+        self.assertEqual(0, res2)
+
 
     # Тест на добавление значение, после заданного  значения
     def test_insert(self):
@@ -103,10 +107,10 @@ class TestMain(unittest.TestCase):
         test1.add_in_tail(LinkedList.Node(64))
         test1.insert(35, 75)
         res1 = test1.return_all_nodes()
-        self.assertEqual(res1, [35, 75, 54, 35, 64])
+        self.assertEqual([35, 75, 54, 35, 64], res1)
         test1.insert(64, 75)
         res2 = test1.return_all_nodes()
-        self.assertEqual(res2, [35, 75, 54, 35, 64, 75])
+        self.assertEqual([35, 75, 54, 35, 64, 75], res2)
 
     '''
     Тест на проверку функцию, которая получает на вход
@@ -124,8 +128,5 @@ class TestMain(unittest.TestCase):
         test2.add_in_tail(LinkedList.Node(64))
 
         res = LinkedList.Comparison(test1, test2)
-        self.assertEqual([70, 118], res)
-
-
-if __name__ == "__main__":
-    unittest.main()
+        self.assertEqual(70, res.head.value)
+        self.assertEqual(118, res.tail.value)

@@ -95,11 +95,11 @@ class LinkedList:
     # Длина списка
     def len(self):
         node = self.head
-        len = 1
-        while node.next != None:
-            len += 1
+        res = 0
+        while node is not None:
+            res += 1
             node = node.next
-        return len
+        return res
 
     # Вставки узла после заданного узла
     def insert(self, afterNode, newNode):
@@ -131,10 +131,10 @@ def Comparison(link1, link2):
     list_link2 = link2.head
 
     if length1 == length2:
-        while list_link1 != None and list_link2 != None:
+        while list_link1 is not None and list_link2 is not None:
             res = list_link1.value + list_link2.value
             list_sum.add_in_tail(Node(res))
             list_link1 = list_link1.next
             list_link2 = list_link2.next
-    return list_sum.return_all_nodes()
+    return list_sum
 
