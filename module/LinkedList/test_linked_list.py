@@ -106,7 +106,7 @@ class TestMain(unittest.TestCase):
     # Тест на добавление значение, после заданного  значения
     def test_insert(self):
         test1 = LinkedList.LinkedList()
-        res1 = test1.insert(32, 65)
+        res1 = test1.insert(94, 65)
         self.assertTrue(res1)
         self.assertEqual(65, test1.head.value)
 
