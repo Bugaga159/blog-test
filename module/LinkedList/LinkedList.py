@@ -104,7 +104,7 @@ class LinkedList:
     def insert(self, afterNode, newNode):
         node = self.head
         if self.head == None:
-            return None
+            self.add_in_tail(Node(newNode))
         else:
             while node is not None:
                 if node.value == afterNode:
