@@ -80,17 +80,16 @@ class LinkedList:
     # Найти заданое значение все в связанном списке
     def find_all(self, val):
         if self.head == None:
-            return None
+            return []
         else:
             res = []
             node = self.head
-            num = 0
             while node is not None:
-                num += 1
                 if node.value == val:
                     res.append(node)
                 node = node.next
             return res
+
 
     # Длина списка
     def len(self):

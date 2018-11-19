@@ -72,15 +72,20 @@ class TestMain(unittest.TestCase):
     # Тест на поиск в списке
     def test_find_all(self):
         test1 = LinkedList.LinkedList()
+
+        res1 = test1.find_all(35)
+        self.assertEqual([], res1)
+
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(12))
-        res1 = test1.find_all(35)
-        res2 = test1.find_all(13)
+        res2 = test1.find_all(35)
+        res3 = test1.find_all(13)
 
-        self.assertEqual(test1.head, res1[0])
-        self.assertEqual([], res2)
+        self.assertEqual(test1.head, res2[0])
+        self.assertEqual([], res3)
+
 
     # Тест на определения длины списка
     def test_lengthList(self):
