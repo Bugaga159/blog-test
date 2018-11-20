@@ -106,24 +106,31 @@ class TestMain(unittest.TestCase):
     # Тест на добавление значение, после заданного  значения
     def test_insert(self):
         test1 = LinkedList.LinkedList()
+
         # Новый узел для вставки
-        newNode1 = 65
-        res1 = test1.insert(94, newNode1)
+        newNode1 = LinkedList.Node(65)
+        res1 = test1.insert(LinkedList.Node(12), newNode1)
         self.assertTrue(res1)
         self.assertEqual(65, test1.head.value)
+        self.assertEqual(65, test1.tail.value)
 
+        # Добавляем новые узлы в список
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(54))
         test1.add_in_tail(LinkedList.Node(35))
         test1.add_in_tail(LinkedList.Node(64))
 
         # Новый узел для вставки
-        newNode2 = 75
-        res2 = test1.insert(35, newNode2)
+        newNode2 = LinkedList.Node(75)
+
+        # Вставка узла в список с положительным ответом
+        res2 = test1.insert(LinkedList.Node(54), newNode2)
         self.assertTrue(res2)
 
-        res3 = test1.insert(36, newNode2)
+        # Вставка узла в список с отрицательным ответом
+        res3 = test1.insert(LinkedList.Node(66), newNode2)
         self.assertFalse(res3)
+
 
 
     '''

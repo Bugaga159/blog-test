@@ -102,18 +102,19 @@ class LinkedList:
 
     # Вставки узла после заданного узла
     def insert(self, afterNode, newNode):
-
         if self.head == None:
-            self.head = Node(newNode)
+            self.head = newNode
             self.tail = self.head
             return True
         else:
             node = self.head
             while node is not None:
-                if node.value == afterNode:
-                    prev = Node(newNode)
+                if node.value == afterNode.value:
+                    prev = newNode
                     prev.next = node.next
                     node.next = prev
+                    if node == self.tail:
+                        self.tail = node.next
                     return True
                 node = node.next
             return False
