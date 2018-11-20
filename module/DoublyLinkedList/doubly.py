@@ -19,97 +19,88 @@ class LinkedList2:
             item.prev = self.tail
         self.tail = item
 
-    def return_Lists(self):
-        arrList = []
+    # Найти значение в связанном списке
+    def find(self, val):
         node = self.head
         while node is not None:
-            if node.prev == None:
-                prevRet = 'None'
-            else:
-                prevRet= node.prev.value
-            valRet = node.value
-            if node.next == None:
-                nextRet = 'None'
-            else:
-                nextRet = node.next.value
-
-            arrList.append([prevRet, valRet, nextRet])
+            if node.value == val:
+                return node
             node = node.next
-        return arrList
+        return False
 
-
-    # метод удаления одного узла по его значению
-    def remove(self, val):
-        if self.head == None:
-            return None
+    # Удаление узла по значение, если нужно удалить во всех узлах значение, то all=TRUE
+    def delete(self, val):
+        if self.head is None:
+            return True
         elif self.head.value == val:
-            self.head = self.head.next
-            self.head.prev = None
-        elif self.tail.value == val:
-            self.tail = self.tail.prev
-            self.tail.next = None
+            if self.head == self.tail:
+                self.tail = None
+                self.head = None
+            else:
+                self.head = self.head.next
+        else:
+            node = self.head
+            while node.next is not None:
+                if node.next.value == val:
+                    if node.next == self.tail:
+                        self.tail = node
+                        node.next = None
+                    else:
+                        node.next = node.next.next
+                        node.next.prev = node
+                    break
+                else:
+                    node = node.next
+
+    # Очистить список
+    def clean(self):
+        self.head = None
+        self.tail = None
+
+    # Длина списка
+    def len(self):
+        node = self.head
+        res = 0
+        while node is not None:
+            res += 1
+            node = node.next
+        return res
+
+    # Вставки узла после заданного узла
+    def insert(self, afterNode, newNode):
+        if self.head is None:
+            self.head = newNode
+            self.tail = self.head
+            return True
         else:
             node = self.head
             while node is not None:
-                if node.next.value == val:
-                    if node.next.next != None:
-                        node.next = node.next.next
+                if node.value == afterNode.value:
+                    if node == self.tail:
+                        node.next = newNode
                         node.next.prev = node
+                        self.tail = node.next
                     else:
-                        node.next = None
-                    break
+                        new_node = newNode
+                        new_node.next = node.next
+                        new_node.next.prev = new_node
+                        new_node.prev = node
+                        node.next = new_node
+                    return True
                 node = node.next
-    # метод вставки узла после заданного узла.
-    def add_val_after(self, val1, val2):
-        node = self.head
-        if self.head == None:
-            return None
-        elif self.tail.value == val1:
-            new_node = Node2(val2)
-            self.tail.next = new_node
-            new_node.prev = self.tail
-            self.tail = new_node
-        else:
-            while node is not None:
-                if node.value == val1:
-                    new_node = Node2(val2)
-                    new_node.next = node.next
-                    node.next.prev = new_node
-                    new_node.prev = node
-                    node.next = new_node
-                    break
-                node = node.next
+            return False
 
-    # метод вставки узла самым первым элементом.
-    def add_first(self, val):
-        if self.head == None:
-            self.head = Node2(val)
-            item.prev = None
-            item.next = None
+    def add_in_head(self, newNode):
+        if self.head is None:
+            self.head = newNode
+            self.tail = self.head
         else:
-            new_node = Node2(val)
+            new_node = newNode
+            self.head.prev = new_node
             new_node.next = self.head
+            if self.tail == self.head:
+                self.tail = self.head
             new_node.prev = None
-            if self.head is not None:
-                self.head.prev = new_node
             self.head = new_node
-
-    # Показать связанный список
-    def show(self):
-        node = self.head
-        while node is not None:
-            if node.prev == None:
-                print('None')
-            else:
-                print(node.prev.value)
-            print(node.value)
-            if node.next == None:
-                print('None')
-            else:
-                print(node.next.value)
-            print('*' * 9)
-            node = node.next
-
-
 
 

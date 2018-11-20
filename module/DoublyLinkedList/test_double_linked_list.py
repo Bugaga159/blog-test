@@ -4,98 +4,112 @@ from . import doubly
 
 
 class TestDoubleLinkedList(unittest.TestCase):
+    # Тест на добавление в список
+    def test_add_in_tail(self):
+        test1 = doubly.LinkedList2()
 
-    # Тест проверки на удаление из списка узла
-    def test_remove(self):
-        test_rem =doubly.LinkedList2()
-        test_rem.add_in_tail(doubly.Node2(1))
-        test_rem.add_in_tail(doubly.Node2(2))
-        test_rem.add_in_tail(doubly.Node2(3))
-        test_rem.add_in_tail(doubly.Node2(4))
-        test_rem.add_in_tail(doubly.Node2(5))
+        # тест на проверку head = None
+        self.assertIsNone(test1.head)
 
-        test_rem.remove(4)
-        res1 = test_rem.return_Lists()
-        # Проверка res1 is not None
-        self.assertIsNotNone(res1)
+        test1.add_in_tail(doubly.Node2(35))
 
-        # Проверка на соответствие, при удаление узла со значение 4
-        self.assertEqual(res1, [['None', 1, 2],
-                                [1, 2, 3],
-                                [2, 3, 5],
-                                [3, 5, 'None']])
+        # тест на проверку данных в списке
+        self.assertEqual(35, test1.head.value)
 
-        test_rem.remove(1)
-        self.assertEqual(test_rem.head.value, 2)
-        self.assertEqual(test_rem.head.next.value, 3)
+        # тест на проверку head != None
+        self.assertIsNotNone(test1.head)
+        self.assertIsNotNone(test1.tail)
 
-        test_rem.remove(5)
-        self.assertEqual(test_rem.tail.value, 3)
-        self.assertIsNone(test_rem.tail.next)
-        self.assertIsNotNone(test_rem.tail.prev)
-        self.assertEqual(test_rem.tail.prev.value, 2)
-        self.assertIsNone(test_rem.head.prev)
+    # тест на проверку данных в списке
+    def test_delete(self):
+        test1 = doubly.LinkedList2()
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(54))
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(64))
+        test1.delete(54)
+        test1.delete(64)
 
-        test_rem.remove(3)
-        res2 = test_rem.return_Lists()
-
-        # Проверка на соответствие, при удаление всех узлов, кроме
-        self.assertEqual(res2, [['None', 2, 'None']])
+        self.assertEqual(35, test1.head.value)
+        self.assertEqual(35, test1.head.next.value)
+        self.assertEqual(35, test1.head.next.prev.value)
 
 
-
-    # тест проверки метода вставки узла после заданного узла.
-    def test_add_val_after(self):
-        test_add = doubly.LinkedList2()
-        test_add.add_in_tail(doubly.Node2(7))
-        test_add.add_in_tail(doubly.Node2(8))
-        test_add.add_in_tail(doubly.Node2(9))
-
-        test_add.add_val_after(7, 42)
-        res1 = test_add.return_Lists()
-        self.assertEqual(res1, [['None', 7, 42],
-                                [7, 42, 8],
-                                [42, 8, 9],
-                                [8, 9, 'None']])
-
-        self.assertEqual(test_add.head.prev, None)
-        self.assertIsNone(test_add.head.prev)
-        self.assertEqual(test_add.head.next.value, 42)
-
-        test_add.add_val_after(42, 16)
-        res2 = test_add.return_Lists()
-        self.assertEqual(res2, [['None', 7, 42],
-                                [7, 42, 16],
-                                [42, 16, 8],
-                                [16, 8, 9],
-                                [8, 9, 'None']])
-
-        test_add.add_val_after(9, 64)
-        self.assertEqual(test_add.tail.value, 64)
-        self.assertEqual(test_add.tail.prev.value, 9)
-        self.assertIsNone(test_add.tail.next)
+        test2 = doubly.LinkedList2()
+        test2.add_in_tail(doubly.Node2(35))
+        test2.delete(35)
+        self.assertEqual(None, test2.head)
+        self.assertEqual(None, test2.tail)
 
 
-    # тест проверки метода вставки узла самым первым элементом
-    def test_add_first(self):
-        test_add = doubly.LinkedList2()
-        test_add.add_in_tail(doubly.Node2(2))
-        test_add.add_in_tail(doubly.Node2(12))
-        test_add.add_in_tail(doubly.Node2(74))
+    # Тест проверяет, на пустоту  связанного списка
+    def test_clean(self):
+        test1 = doubly.LinkedList2()
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(54))
 
-        test_add.add_first(52)
-        res1 = test_add.return_Lists()
-        self.assertEqual(res1, [['None', 52, 2],
-                                [52, 2, 12],
-                                [2, 12, 74],
-                                [12, 74, 'None']])
-        test_add.add_first(6)
-        res2 = test_add.return_Lists()
-        self.assertEqual(res2, [['None', 6, 52],
-                                [6, 52, 2],
-                                [52, 2, 12],
-                                [2, 12, 74],
-                                [12, 74, 'None']])
+        test1.clean()
+        self.assertEqual(None, test1.head)
+        self.assertIsNone(test1.tail)
+
+    # Тест на поиск в списке
+    def test_find(self):
+        test1 = doubly.LinkedList2()
+
+        res1 = test1.find(35)
+        self.assertFalse(res1)
+
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(54))
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(12))
+
+        res2 = test1.find(35)
+        self.assertEqual(35, res2.value)
+        self.assertFalse(test1.find(13))
+
+    # Тест на определения длины списка
+    def test_len(self):
+        test1 = doubly.LinkedList2()
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(54))
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(64))
+        res1 = test1.len()
+
+        self.assertEqual(4, res1)
+
+        test2 = doubly.LinkedList2()
+        res2 = test2.len()
+        self.assertEqual(0, res2)
+
+    # Тест на добавление значение, после заданного  значения
+    def test_insert(self):
+        test1 = doubly.LinkedList2()
+
+        # Новый узел для вставки
+        newNode1 = doubly.Node2(65)
+        res1 = test1.insert(doubly.Node2(12), newNode1)
+        self.assertTrue(res1)
+        self.assertEqual(65, test1.head.value)
+        self.assertEqual(65, test1.tail.value)
+
+        # Добавляем новые узлы в список
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(54))
+        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node2(64))
+
+        # Новый узел для вставки
+        newNode2 = doubly.Node2(75)
+
+        # Вставка узла в список с положительным ответом
+        res2 = test1.insert(doubly.Node2(54), newNode2)
+        self.assertTrue(res2)
+
+        # Вставка узла в список с отрицательным ответом
+        res3 = test1.insert(doubly.Node2(66), newNode2)
+        self.assertFalse(res3)
 
 
 if __name__ == "__main__":
