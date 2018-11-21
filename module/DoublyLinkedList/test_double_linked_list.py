@@ -11,7 +11,7 @@ class TestDoubleLinkedList(unittest.TestCase):
         # тест на проверку head = None
         self.assertIsNone(test1.head)
 
-        test1.add_in_tail(doubly.Node2(35))
+        test1.add_in_tail(doubly.Node(35))
 
         # тест на проверку данных в списке
         self.assertEqual(35, test1.head.value)
@@ -23,10 +23,10 @@ class TestDoubleLinkedList(unittest.TestCase):
     # тест на проверку данных в списке
     def test_delete(self):
         test1 = doubly.LinkedList2()
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(54))
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(64))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(54))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(64))
         test1.delete(54)
         test1.delete(64)
 
@@ -36,7 +36,7 @@ class TestDoubleLinkedList(unittest.TestCase):
 
 
         test2 = doubly.LinkedList2()
-        test2.add_in_tail(doubly.Node2(35))
+        test2.add_in_tail(doubly.Node(35))
         test2.delete(35)
         self.assertEqual(None, test2.head)
         self.assertEqual(None, test2.tail)
@@ -45,8 +45,8 @@ class TestDoubleLinkedList(unittest.TestCase):
     # Тест проверяет, на пустоту  связанного списка
     def test_clean(self):
         test1 = doubly.LinkedList2()
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(54))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(54))
 
         test1.clean()
         self.assertEqual(None, test1.head)
@@ -59,10 +59,10 @@ class TestDoubleLinkedList(unittest.TestCase):
         res1 = test1.find(35)
         self.assertFalse(res1)
 
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(54))
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(12))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(54))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(12))
 
         res2 = test1.find(35)
         self.assertEqual(35, res2.value)
@@ -71,10 +71,10 @@ class TestDoubleLinkedList(unittest.TestCase):
     # Тест на определения длины списка
     def test_len(self):
         test1 = doubly.LinkedList2()
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(54))
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(64))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(54))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(64))
         res1 = test1.len()
 
         self.assertEqual(4, res1)
@@ -88,27 +88,27 @@ class TestDoubleLinkedList(unittest.TestCase):
         test1 = doubly.LinkedList2()
 
         # Новый узел для вставки
-        newNode1 = doubly.Node2(65)
-        res1 = test1.insert(doubly.Node2(12), newNode1)
+        newNode1 = doubly.Node(65)
+        res1 = test1.insert(doubly.Node(12), newNode1)
         self.assertTrue(res1)
         self.assertEqual(65, test1.head.value)
         self.assertEqual(65, test1.tail.value)
 
         # Добавляем новые узлы в список
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(54))
-        test1.add_in_tail(doubly.Node2(35))
-        test1.add_in_tail(doubly.Node2(64))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(54))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(64))
 
         # Новый узел для вставки
-        newNode2 = doubly.Node2(75)
+        newNode2 = doubly.Node(75)
 
         # Вставка узла в список с положительным ответом
-        res2 = test1.insert(doubly.Node2(54), newNode2)
+        res2 = test1.insert(doubly.Node(54), newNode2)
         self.assertTrue(res2)
 
         # Вставка узла в список с отрицательным ответом
-        res3 = test1.insert(doubly.Node2(66), newNode2)
+        res3 = test1.insert(doubly.Node(66), newNode2)
         self.assertFalse(res3)
 
 
