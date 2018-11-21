@@ -26,7 +26,7 @@ class LinkedList2:
             if node.value == val:
                 return node
             node = node.next
-        return False
+        return None
 
     # Удаление узла по значение, если нужно удалить во всех узлах значение, то all=TRUE
     def delete(self, val):

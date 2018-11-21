@@ -57,7 +57,7 @@ class TestDoubleLinkedList(unittest.TestCase):
         test1 = doubly.LinkedList2()
 
         res1 = test1.find(35)
-        self.assertFalse(res1)
+        self.assertIsNone(res1)
 
         test1.add_in_tail(doubly.Node(35))
         test1.add_in_tail(doubly.Node(54))
@@ -66,7 +66,8 @@ class TestDoubleLinkedList(unittest.TestCase):
 
         res2 = test1.find(35)
         self.assertEqual(35, res2.value)
-        self.assertFalse(test1.find(13))
+        res3 = test1.find(13)
+        self.assertEqual(None, res3)
 
     # Тест на определения длины списка
     def test_len(self):
