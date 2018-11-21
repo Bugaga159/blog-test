@@ -23,6 +23,7 @@ class TestDoubleLinkedList(unittest.TestCase):
     # тест на проверку данных в списке
     def test_delete(self):
         test1 = doubly.LinkedList2()
+        self.assertFalse(test1.delete(54))
         test1.add_in_tail(doubly.Node(35))
         test1.add_in_tail(doubly.Node(54))
         test1.add_in_tail(doubly.Node(35))

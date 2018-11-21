@@ -28,16 +28,18 @@ class LinkedList2:
             node = node.next
         return None
 
-    # Удаление узла по значение, если нужно удалить во всех узлах значение, то all=TRUE
+    # Удаление узла по значение
     def delete(self, val):
         if self.head is None:
-            return True
+            return None
         elif self.head.value == val:
             if self.head == self.tail:
                 self.tail = None
                 self.head = None
             else:
                 self.head = self.head.next
+                self.head.prev = None
+            return True
         else:
             node = self.head
             while node.next is not None:
@@ -48,9 +50,10 @@ class LinkedList2:
                     else:
                         node.next = node.next.next
                         node.next.prev = node
-                    break
+                    return True
                 else:
                     node = node.next
+            return None
 
     # Очистить список
     def clean(self):
