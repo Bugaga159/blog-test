@@ -6,12 +6,7 @@ class HashTable:
         
     # Вычисляет индекс слота
     def hash_fun(self, value):
-        key = 0
-        byteArr = list(map(ord, str(value)))
-        for i in range(len(byteArr)):
-            key += byteArr[i]
-        key = key % self.size
-        return key
+        return sum(list(map(ord, str(value)))) % self.size
       
     # метод  поиска слота, значению сперва рассчитывает 
     # индекс хэш-функцией, а затем отыскивает подходящий 
