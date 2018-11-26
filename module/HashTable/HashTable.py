@@ -32,10 +32,16 @@ class HashTable:
         else:
             return None
 
+    # проверяет, имеется ли в слотах указанное значение, 
+    # и возвращает либо слот, либо None.
     def find(self, value):
-        for i in range(self.size):
-            if self.slots[i] == value:
-                return i
+        index = self.hash_fun(value)
+        if self.slots[index] == value:
+          return index
+        else:
+          for i in range(self.size):
+              if self.slots[i] == value:
+                  return i
         return None
 
 
