@@ -1,3 +1,4 @@
+
 class NativeDictionary:
     def __init__(self, sz, stp):
         self.size = sz
@@ -26,27 +27,30 @@ class NativeDictionary:
 
     # помещает значение value в слот,
     # вычисляемый с помощью функции поиска
-    def put(self, key, value):
-        index = self.seek_slot(key)
-        if index != None:
-            self.slots.insert(index, key)
-            self.dictionary[key] = value
+    def put(self, key, value): 
+        if self.is_key(key) is not None:
+          self.dictionary[key] = value
         else:
-            return None
+            index = self.seek_slot(key)
+            if index != None:
+                self.slots[index] = key
+                self.dictionary[key] = value
+            else:
+                return None
     # проверяет, имеется ли в слотах указанное значение, 
     # и возвращает либо слот, либо None.
     def is_key(self, key):
         index = self.hash_fun(key)
         if self.slots[index] == key:
-            return key
+            return True
         else:
             for i in range(self.size):
                 if self.slots[i] == key:
-                    return key
+                    return True
         return None
     def get(self, key):
         index = self.is_key(key)
-        if index != None:
-            return self.dictionary[index]
+        if index:
+            return self.dictionary[key]
         else:
           return None
