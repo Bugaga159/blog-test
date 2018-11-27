@@ -1,8 +1,9 @@
-class HashTable:
+class NativeDictionary:
     def __init__(self, sz, stp):
         self.size = sz
         self.step = stp
         self.slots = [None] * self.size
+        self.dictionary = {}
         
     # Вычисляет индекс слота
     def hash_fun(self, value):
@@ -25,23 +26,32 @@ class HashTable:
 
     # помещает значение value в слот,
     # вычисляемый с помощью функции поиска
-    def put(self, value):
-        index = self.seek_slot(value)
-        if index != None:
-            self.slots.insert(index, value)
+    def put(self, key, value): 
+        keyExist = self.is_key(key)
+        if keyExist is not None:
+            self.dictionary[key] = value
         else:
-            return None
-
+            index = self.seek_slot(key)
+            if index != None:
+                self.slots[index] = key
+                self.dictionary[key] = value
+            else:
+                return None
     # проверяет, имеется ли в слотах указанное значение, 
     # и возвращает либо слот, либо None.
-    def find(self, value):
-        index = self.hash_fun(value)
-        if self.slots[index] == value:
-          return index
+    def is_key(self, key):
+        index = self.hash_fun(key)
+        if self.slots[index] == key:
+            return key
         else:
-          for i in range(self.size):
-              if self.slots[i] == value:
-                  return i
+            for i in range(self.size):
+                if self.slots[i] == key:
+                    return key
         return None
-
-
+    # Проверяет и возвращает значение словаря по ключу
+    def get(self, key):
+        index = self.is_key(key)
+        if index != None:
+            return self.dictionary[index]
+        else:
+          return None
