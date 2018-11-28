@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f28fcd4-a21b-4a6b-b6ba-19ae12e6a276" name="Default Changelist" comment="Тесты для проверки модуля Stack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/HashTable/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/HashTable/HashTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/HashTable/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/HashTable/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/NativeDictionary/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/NativeDictionary/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,36 +52,37 @@
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.60" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="85" />
+          <entry key="py" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="85" />
+          <entry key="Python" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="32" />
           <entry key="dummy" value="6" />
-          <entry key="py" value="6256" />
+          <entry key="py" value="6369" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="43" />
-          <entry key="Python" value="6288" />
+          <entry key="Python" value="6401" />
         </counts>
       </usages-collector>
     </session>
@@ -117,37 +118,29 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module/HashTable/test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="337">
-                  <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module/HashTable/HashTable.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
-                  <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/NativeDictionary/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -185,6 +178,8 @@
         <option value="$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py" />
         <option value="$PROJECT_DIR$/module/HashTable/HashTable.py" />
         <option value="$PROJECT_DIR$/module/HashTable/test.py" />
+        <option value="$PROJECT_DIR$/module/NativeDictionary/test.py" />
+        <option value="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" />
       </list>
     </option>
   </component>
@@ -218,7 +213,25 @@
               <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Deque" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="HashTable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="NativeDictionary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Stack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,8 +256,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test.py">
-    <configuration name="HashTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests in test.py (1)">
+    <configuration name="NativeDictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,11 +265,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/HashTable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/NativeDictionary" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/HashTable/HashTable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,7 +335,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for HashTable.test.TestHashTable.test_hash_fun" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -332,11 +345,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;HashTable.test.TestHashTable.test_hash_fun&quot;" />
+      <option name="_new_target" value="&quot;NativeDictionary.test.TestNativeDictionary&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for HashTable.test.TestHashTable.test_put" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -346,21 +359,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;HashTable.test.TestHashTable.test_put&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for HashTable.test.TestHashTable.test_seek_slot" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;HashTable.test.TestHashTable.test_seek_slot&quot;" />
+      <option name="_new_target" value="&quot;NativeDictionary.test.TestNativeDictionary.test_hash_fun&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -376,6 +375,20 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList.test_remove&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test.py (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="blog-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/module/NativeDictionary/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -397,19 +410,19 @@
       <item itemvalue="Python.Queues" />
       <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" />
       <item itemvalue="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList" />
-      <item itemvalue="Python.HashTable" />
       <item itemvalue="Python tests.Unittests in test.py" />
-      <item itemvalue="Python tests.Unittests for HashTable.test.TestHashTable.test_hash_fun" />
-      <item itemvalue="Python tests.Unittests for HashTable.test.TestHashTable.test_seek_slot" />
-      <item itemvalue="Python tests.Unittests for HashTable.test.TestHashTable.test_put" />
+      <item itemvalue="Python tests.Unittests in test.py (1)" />
+      <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" />
+      <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary" />
+      <item itemvalue="Python.NativeDictionary" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test.py (1)" />
+        <item itemvalue="Python.NativeDictionary" />
+        <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary" />
+        <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" />
         <item itemvalue="Python tests.Unittests in test.py" />
-        <item itemvalue="Python tests.Unittests for HashTable.test.TestHashTable.test_put" />
-        <item itemvalue="Python tests.Unittests for HashTable.test.TestHashTable.test_seek_slot" />
-        <item itemvalue="Python tests.Unittests for HashTable.test.TestHashTable.test_hash_fun" />
-        <item itemvalue="Python.HashTable" />
       </list>
     </recent_temporary>
   </component>
@@ -435,35 +448,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 44m 09s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_NativeDictionary_test_TestNativeDictionary_test_hash_fun - 2018.11.28 at 11h 37m 47s.xml">
+      <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 44m 18s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_NativeDictionary_test_TestNativeDictionary - 2018.11.28 at 11h 37m 51s.xml">
+      <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 44m 48s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_for_NativeDictionary_test_TestNativeDictionary - 2018.11.28 at 11h 37m 57s.xml">
+      <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 45m 41s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 38m 06s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_HashTable_test_TestHashTable_test_put - 2018.11.25 at 17h 47m 22s.xml">
-      <configuration name="Unittests for HashTable.test.TestHashTable.test_put" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 38m 17s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 47m 27s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 40m 20s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 47m 58s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 43m 17s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 49m 00s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 45m 34s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 49m 56s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 47m 15s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py - 2018.11.25 at 17h 51m 11s.xml">
-      <configuration name="Unittests in test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 49m 12s.xml">
+      <configuration name="Unittests in test.py (1)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -558,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Queues/QueuesStack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Deque/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -622,13 +628,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/OrderedList/СomparisonStrings.py" />
     <entry file="file://$PROJECT_DIR$/module/OrderedList/test_comparison.py" />
-    <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/OrderedList/test_ordered_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
@@ -650,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Deque/Deque.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/LinkedList/test_linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -664,20 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/LinkedList/LinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="59" column="42" lean-forward="true" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/DoublyLinkedList/test_double_linked_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,17 +670,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/HashTable/HashTable.py">
+    <entry file="file://$PROJECT_DIR$/module/HashTable/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state relative-caret-position="303">
+          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/HashTable/test.py">
+    <entry file="file://$PROJECT_DIR$/module/HashTable/HashTable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        <state relative-caret-position="663">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Queues/QueuesStack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/LinkedList/LinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="42" lean-forward="true" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Stack/Stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Deque/Deque.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/NativeDictionary/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

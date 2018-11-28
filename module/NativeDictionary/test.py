@@ -5,7 +5,7 @@ from . import NativeDictionary
 class TestNativeDictionary(unittest.TestCase):
 
     def test_hash_fun(self):
-        test = NativeDictionary.HashTable(17, 3)
+        test = NativeDictionary.NativeDictionary(17, 3)
         a = test.hash_fun(0)
 
         # символ - 0, в Юникоде в десятичной системе исчисления равен 48
@@ -20,7 +20,7 @@ class TestNativeDictionary(unittest.TestCase):
 
 
     def test_seek_slot(self):
-        test = NativeDictionary.HashTable(17, 3)
+        test = NativeDictionary.NativeDictionary(17, 3)
         a = test.seek_slot(0)
         # символ - 0, в Юникоде в десятичной системе исчисления равен 48
         b = 48 % test.size
@@ -32,22 +32,22 @@ class TestNativeDictionary(unittest.TestCase):
         self.assertEqual(d, c)
 
     def test_put(self):
-        test = NativeDictionary.HashTable(17, 3)
+        test = NativeDictionary.NativeDictionary(17, 3)
         test.put(9, '15932')
         test.put('Apple', 65)
 
         # Проверка на соответствие
-        self.assertEqual('15932', test.dictionary[9])
-        self.assertEqual(65, test.dictionary['Apple'])
+        self.assertEqual('15932', test.dictionary[test.find(9)])
+        self.assertEqual(65, test.dictionary[test.find('Apple')])
         # Проверка на None, если ключ не правильный
-        self.assertIsNone(test1.dictionary['apple'])
+        self.assertIsNone(test.find('apple'))
 
         # Меняем значение в словаре
         test.put('Apple', 50)
-        self.assertEqual(50, test.dictionary['Apple'])
+        self.assertEqual(50, test.dictionary[test.find('Apple')])
 
     def test_is_key(self):
-        test = NativeDictionary.HashTable(17, 3)
+        test = NativeDictionary.NativeDictionary(17, 3)
         test.put(9, '15932')
         test.put('Apple', 65)
 
@@ -55,14 +55,14 @@ class TestNativeDictionary(unittest.TestCase):
         self.assertIsNone(test.is_key('apple'))
 
     def test_get(self):
-        test = NativeDictionary.HashTable(17, 3)
+        test = NativeDictionary.NativeDictionary(17, 3)
         test.put(9, '15932')
         test.put('Apple', 65)
 
         self.assertEqual(65, test.get('Apple'))
         self.assertEqual('15932', test.get(9))
 
-        # Меняем значение в словаре по ключу 
+        # Меняем значение в словаре по ключу
         test.put('Apple', 50)
         self.assertEqual(50, test.get('Apple'))
         self.assertIsNone(test.get('apple'))

@@ -1,4 +1,4 @@
-from . import HashTable
+from module.HashTable.HashTable import HashTable
 
 class NativeDictionary(HashTable):
     def __init__(self, sz, stp):
@@ -10,7 +10,7 @@ class NativeDictionary(HashTable):
 
     def put(self, key, value):
         if self.find(key) is not None:
-          self.dictionary[key] = value
+          self.dictionary[self.find(key)] = value
         else:
           index = self.seek_slot(key)
           if index is not None:
@@ -27,6 +27,11 @@ class NativeDictionary(HashTable):
             return None
 
 
-    def get(self, key): 
-        return self.dictionary[self.find(key)]
+    def get(self, key):
+        index = self.find(key)
+        if index is not None:
+            return self.dictionary[index]
+        else:
+            return None
+
   
