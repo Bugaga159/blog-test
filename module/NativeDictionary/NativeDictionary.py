@@ -10,14 +10,14 @@ class NativeDictionary(HashTable):
 
     def put(self, key, value):
         if self.find(key) is not None:
-          self.dictionary[self.find(key)] = value
+            self.dictionary[self.find(key)] = value
         else:
-          index = self.seek_slot(key)
-          if index is not None:
-              self.slots[index] = key
-              self.dictionary[index] = value
-          else:
-              return None
+            index = self.seek_slot(key)
+            if index is not None:
+                self.slots[index] = key
+                self.dictionary[index] = value
+            else:
+                return None
 
     def is_key(self, key):
         index = self.find(key)
