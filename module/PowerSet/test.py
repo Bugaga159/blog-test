@@ -53,8 +53,65 @@ class TestPowerSet(unittest.TestCase):
         a = ['Y56', 0]
         self.assertEqual(a, test1.intersection(test2.slots))
 
-        print(test2.remove(0))
+        test2.remove(0)
         test2.remove('Y56')
         b = []
-        print((test2.slots))
         self.assertEqual(b, test1.intersection(test2.slots))
+
+    def test_difference(self):
+        test1 = PowerSet.PowerSet(17, 3)
+        test2 = PowerSet.PowerSet(17, 3)
+
+        test1.put(15)
+        test1.put(0)
+        test1.put('a')
+        test1.put('Y56')
+
+        test2.put(0)
+        test2.put(55)
+        test2.put('Y56')
+        test2.put('A')
+        a = ['A', 55]
+        self.assertEqual(a, test1.difference(test2.slots))
+
+        test2.remove(55)
+        test2.remove('A')
+        self.assertEqual([], test1.difference(test2.slots))
+
+    def test_issubset(self):
+        test1 = PowerSet.PowerSet(17, 3)
+        test2 = PowerSet.PowerSet(17, 3)
+
+        test1.put(15)
+        test1.put(0)
+        test1.put('a')
+        test1.put('Y56')
+
+        test2.put(0)
+        test2.put('Y56')
+
+        self.assertTrue(test1.issubset(test2.slots))
+
+        test2.put(44)
+        self.assertFalse(test1.issubset(test2.slots))
+
+    def test_union(self):
+        test1 = PowerSet.PowerSet(17, 3)
+        test2 = PowerSet.PowerSet(17, 3)
+
+        test1.put(15)
+        test1.put(0)
+        test1.put('a')
+        test1.put('Y56')
+
+        test2.put(0)
+        test2.put('Y56')
+
+        a = [15, 'Y56', 'a', 0]
+        self.assertEqual(a, test1.union(test2.slots))
+
+        test2.remove(0)
+        test2.remove('Y56')
+        b = [15, 'Y56', 'a', 0]
+        self.assertEqual(b, test1.union(test2.slots))
+        

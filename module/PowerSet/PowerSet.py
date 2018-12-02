@@ -7,8 +7,8 @@ class PowerSet(HashTable):
         k = self.find(value)
         if k is None:
             index = self.seek_slot(value)
-            if index != None:
-                self.slots.insert(index, value)
+            if index is not None:
+                self.slots[index] = value
             else:
                 return None
         else:
@@ -17,12 +17,11 @@ class PowerSet(HashTable):
     #   удаление элемента из множества
     def remove(self, value):
         index = self.find(value)
-
-        if index is None:
-            return None
-        else:
+        if index is not None:
             self.slots[index] = None
-            print(index)
+        else:
+            return None
+
 
     #   в качестве параметра выступает другое множество, 
     #   а возвращается пересечение этих множеств
@@ -39,14 +38,18 @@ class PowerSet(HashTable):
     #   в качестве параметра выступает другое множество, 
     #   а возвращается объединение этих множеств
     def union(self, val):
-        sumSet = PowerSet(self.size, self.step)
+        sumSet = []
         for i in val:
             if i is not None:
-                sumSet.put(i)
+                res = self.find(i)
+                if res is None:
+                    sumSet.append(i)
         for k in self.slots:
             if k is not None:
-                sumSet.put(k)
-        return sumSet.slots
+                sumSet.append(k)
+        return sumSet
+
+
 
     #   в качестве параметра выступает другое множество, 
     #   а возвращается подмножество текущего множества из
