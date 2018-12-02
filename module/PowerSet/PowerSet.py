@@ -17,11 +17,12 @@ class PowerSet(HashTable):
     #   удаление элемента из множества
     def remove(self, value):
         index = self.find(value)
-        if index is not None:
-            self.slots[index] = None
-            return True
-        else:
+
+        if index is None:
             return None
+        else:
+            self.slots[index] = None
+            print(index)
 
     #   в качестве параметра выступает другое множество, 
     #   а возвращается пересечение этих множеств
@@ -29,15 +30,16 @@ class PowerSet(HashTable):
         common = []
         for i in value:
             if i is not None:
-              res = self.find(i)
-              if res is not None:
-                  common.append(self.slots[res])
+                res = self.find(i)
+                if res is not None:
+                    common.append(self.slots[res])
+
         return common
     
     #   в качестве параметра выступает другое множество, 
     #   а возвращается объединение этих множеств
     def union(self, val):
-        sumSet = PowerSet( self.size, self.step)
+        sumSet = PowerSet(self.size, self.step)
         for i in val:
             if i is not None:
                 sumSet.put(i)

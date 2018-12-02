@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f28fcd4-a21b-4a6b-b6ba-19ae12e6a276" name="Default Changelist" comment="Тесты для проверки модуля Stack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/NativeDictionary/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/NativeDictionary/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/PowerSet/PowerSet.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/PowerSet/PowerSet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/PowerSet/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/PowerSet/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,35 +54,35 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.60" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="93" />
+          <entry key="py" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="93" />
+          <entry key="Python" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="32" />
           <entry key="dummy" value="6" />
-          <entry key="py" value="6369" />
+          <entry key="py" value="6961" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="43" />
-          <entry key="Python" value="6401" />
+          <entry key="Python" value="6993" />
         </counts>
       </usages-collector>
     </session>
@@ -118,29 +118,50 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/NativeDictionary/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module/PowerSet/test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="284">
+                  <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                    <marker date="1543763385364" expanded="true" signature="79:470" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module/NativeDictionary/test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" column="30" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="18" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module/PowerSet/PowerSet.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -180,6 +201,8 @@
         <option value="$PROJECT_DIR$/module/HashTable/test.py" />
         <option value="$PROJECT_DIR$/module/NativeDictionary/test.py" />
         <option value="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" />
+        <option value="$PROJECT_DIR$/module/PowerSet/PowerSet.py" />
+        <option value="$PROJECT_DIR$/module/PowerSet/test.py" />
       </list>
     </option>
   </component>
@@ -197,6 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,12 +232,6 @@
               <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Deque" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
@@ -231,13 +249,18 @@
               <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="PowerSet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="Stack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,8 +279,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test.py (1)">
-    <configuration name="NativeDictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests in test.py">
+    <configuration name="PowerSet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="blog-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -265,130 +288,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/NativeDictionary" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/PowerSet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/PowerSet/PowerSet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Queues" type="PythonConfigurationType" factoryName="Python">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/Queues" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/Queues/Queues.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_queue" type="PythonConfigurationType" factoryName="Python">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module/Queues" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module/Queues/test_queue.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList" type="tests" factoryName="Unittests" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NativeDictionary.test.TestNativeDictionary&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NativeDictionary.test.TestNativeDictionary.test_hash_fun&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" type="tests" factoryName="Unittests" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;OrderedList.test_ordered_list.TestOrderedList.test_remove&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test.py (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="blog-test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/module/NativeDictionary/test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -401,28 +311,18 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/module/HashTable/test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/module/PowerSet/test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_queue" />
-      <item itemvalue="Python.Queues" />
-      <item itemvalue="Python tests.Unittests for OrderedList.test_ordered_list.TestOrderedList.test_remove" />
-      <item itemvalue="Python tests.Unittests for DoublyLinkedList.test_double_linked_list.TestDoubleLinkedList" />
+      <item itemvalue="Python.PowerSet" />
       <item itemvalue="Python tests.Unittests in test.py" />
-      <item itemvalue="Python tests.Unittests in test.py (1)" />
-      <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" />
-      <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary" />
-      <item itemvalue="Python.NativeDictionary" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test.py (1)" />
-        <item itemvalue="Python.NativeDictionary" />
-        <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary" />
-        <item itemvalue="Python tests.Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" />
         <item itemvalue="Python tests.Unittests in test.py" />
+        <item itemvalue="Python.PowerSet" />
       </list>
     </recent_temporary>
   </component>
@@ -448,35 +348,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_NativeDictionary_test_TestNativeDictionary_test_hash_fun - 2018.11.28 at 11h 37m 47s.xml">
-      <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary.test_hash_fun" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 05m 06s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_NativeDictionary_test_TestNativeDictionary - 2018.11.28 at 11h 37m 51s.xml">
-      <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 05m 11s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_NativeDictionary_test_TestNativeDictionary - 2018.11.28 at 11h 37m 57s.xml">
-      <configuration name="Unittests for NativeDictionary.test.TestNativeDictionary" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 05m 48s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 38m 06s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 06m 07s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 38m 17s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 06m 18s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 40m 20s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 07m 24s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 43m 17s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 07m 54s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 45m 34s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 09m 07s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 47m 15s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 09m 31s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_py_(1) - 2018.11.28 at 11h 49m 12s.xml">
-      <configuration name="Unittests in test.py (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_py - 2018.12.02 at 18h 09m 45s.xml">
+      <configuration name="Unittests in test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -497,8 +397,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" weight="0.22102426" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37061995" />
+      <window_info active="true" anchor="bottom" x="11" y="307" width="1418" height="245" id="Run" order="2" visible="true" weight="0.3962264" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37061995" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
@@ -670,16 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/HashTable/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/HashTable/HashTable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -717,17 +607,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/NativeDictionary/NativeDictionary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
+        <state relative-caret-position="544">
           <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/HashTable/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/NativeDictionary/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="306">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/PowerSet/PowerSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/PowerSet/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1543763385364" expanded="true" signature="79:470" ph="..." />
           </folding>
         </state>
       </provider>
