@@ -1,6 +1,7 @@
 import ctypes
-class DynArray:
 
+class DynArray:
+    
     def __init__(self):
         self.count = 0
         self.capacity = 16
@@ -12,7 +13,7 @@ class DynArray:
     def make_array(self, new_capacity):
         return (new_capacity * ctypes.py_object)()
 
-    def __getitem__(self, i):
+    def __getitem__(self,i):
         if i < 0 or i >= self.count:
             raise IndexError('Index is out of bounds')
         return self.array[i]
@@ -26,7 +27,7 @@ class DynArray:
 
     def append(self, itm):
         if self.count == self.capacity:
-            self.resize(2 * self.capacity)
+            self.resize(2*self.capacity)
         self.array[self.count] = itm
         self.count += 1
 
@@ -43,14 +44,12 @@ class DynArray:
                     new_array.append(self.array[u])
                 else:
                     new_array.append(self.array[u])
-
-
         self.count += 1
         if self.count == self.capacity:
             self.resize(2 * self.capacity)
         for u in range(self.count):
             self.array[u] = new_array[u]
-
+        return True
 
     def delete(self, i):
         new_array = []
@@ -65,12 +64,8 @@ class DynArray:
         self.count -= 1
         for u in range(self.count):
             self.array[u] = new_array[u]
-
-        if (self.capacity / 2) > self.count and self.capacity > 16:
-            if self.count == self.capacity:
+        if (self.capacity / 2) > self.count:
+            if self.count >= self.capacity:
                 self.resize(2 * self.capacity)
             else:
                 self.capacity = int(self.capacity / 2)
-
-
-
