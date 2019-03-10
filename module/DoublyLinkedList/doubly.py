@@ -27,6 +27,14 @@ class LinkedList2:
                 return node
             node = node.next
         return None
+    # Найти все узлы по значению
+    def find_all(self, val):
+        quantityNode = []
+        node = self.head
+        while node is not None:
+            if node.value == val:
+                quantityNode.append(node)
+        return quantityNode
 
     # Удаление узла по значение
     def delete(self, val):

@@ -114,4 +114,3 @@ class TestPowerSet(unittest.TestCase):
         test2.remove('Y56')
         b = [15, 'Y56', 'a', 0]
         self.assertEqual(b, test1.union(test2.slots))
-        

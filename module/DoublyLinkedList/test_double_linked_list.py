@@ -112,6 +112,21 @@ class TestDoubleLinkedList(unittest.TestCase):
         # Вставка узла в список с отрицательным ответом
         res3 = test1.insert(doubly.Node(66), newNode2)
         self.assertFalse(res3)
+    def test_find_all(self):
+        test1 = doubly.LinkedList2()
+
+        res1 = test1.find_all(35)
+        self.assertEqual([], res1)
+
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(54))
+        test1.add_in_tail(doubly.Node(35))
+        test1.add_in_tail(doubly.Node(12))
+
+        res2 = test1.find_all(35)
+        self.assertEqual(2, len(res2))
+        self.assertEqual(35, res2[0].value)
+
 
 
 if __name__ == "__main__":
