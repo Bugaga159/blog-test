@@ -24,14 +24,6 @@ class LinkedList:
             print(node.value)
             node = node.next
 
-    def return_all_nodes(self):
-        node = self.head
-        arrNodes = []
-        while node is not None:
-            arrNodes.append(node.value)
-            node = node.next
-        return arrNodes
-
     # Найти значение в связанном списке
     def find(self, val):
         node = self.head
