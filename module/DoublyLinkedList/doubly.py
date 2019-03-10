@@ -27,6 +27,7 @@ class LinkedList2:
                 return node
             node = node.next
         return None
+
     # Найти все узлы по значению
     def find_all(self, val):
         quantityNode = []
@@ -34,6 +35,7 @@ class LinkedList2:
         while node is not None:
             if node.value == val:
                 quantityNode.append(node)
+            node = node.next
         return quantityNode
 
     # Удаление узла по значение

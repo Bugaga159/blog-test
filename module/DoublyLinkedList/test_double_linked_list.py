@@ -126,6 +126,7 @@ class TestDoubleLinkedList(unittest.TestCase):
         res2 = test1.find_all(35)
         self.assertEqual(2, len(res2))
         self.assertEqual(35, res2[0].value)
+        self.assertEqual(35, res2[1].value)
 
 
 
