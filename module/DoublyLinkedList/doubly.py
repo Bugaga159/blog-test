@@ -100,8 +100,12 @@ class LinkedList2:
                         new_node.prev = node
                         node.next = new_node
                     return True
+                elif node.next is None:
+                    node.next = newNode
+                    node.next.prev = node
+                    self.tail = node.next
+                    return True
                 node = node.next
-            return False
 
     def add_in_head(self, newNode):
         if self.head is None:
