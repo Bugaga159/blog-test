@@ -89,7 +89,6 @@ class LinkedList2:
         else:
             resultFound = self.find(afterNode.value)   
             if resultFound is not None:
-                print(resultFound.value)
                 prevNode = newNode
                 prevNode.next = resultFound.next
                 resultFound.next = prevNode
